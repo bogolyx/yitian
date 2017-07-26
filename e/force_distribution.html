@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<style>
+			/*顶部开始*/
+		.mui-bar-nav{
+				background-color:#3088c9;
+				height: 50px;				
+			}
+			.mui-pull-left{
+				color: #fff;
+				line-height: 25px;
+			}
+			
+			.mui-title{
+				text-align: center;
+				line-height: 50px;
+				color: #FFFFff;
+			}
+			.mui-bar-nav .mui-btn{
+				float: right;
+				position:relative; 
+				background-color: #3088C9;
+				border: 0;
+				color: #fff;
+			}
+			.mui-btn-block{
+				background-color: hsla(0,0,0,0);
+			}
+			/*顶部结束*/
+			.mui-content{
+				width: 100%;
+				height: 100vh;
+				background-image: url(images/map.png);
+			}
+			
+		</style>
+		
+	</head>
+
+	<body>
+		<script src="js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init()
+		</script>
+		<script>
+			function ulmove(){
+				document.getElementById("upbody").style.marginTop = "-2000px";
+			}
+		</script>
+		<div id="renwuzhengti1">
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left" href="##"></a>
+			<h1 class="mui-title">力量分布</h1>
+			<button id="dispatch" type="button" class="mui-btn" onclick="window.location='force_distribution_areaSelect.html'">调度</button>
+		</header>
+		<!--头部完成-->
+		<!--主体开始-->
+		<div class="mui-content">
+		    <p style="width: 165px; margin-top: 120px;text-align: right;" class="point1">
+		    	<span class="mui-icon mui-icon-location-filled" style="color:#1a63e9;font-size: 36px;">
+		    		<a href="taskExecutor.html" id="openPopover" class="mui-btn mui-btn-primary mui-btn-block" style="background-color: rgba(0,0,0,0);border: 1px solid rgba(0,0,0,0);"></a>
+		    	</span>
+		    </p>
+		   <p style="width: 280px;margin-top: 50px;text-align: right;" class="point2">
+		    	<span class="mui-icon mui-icon-location-filled" style=" color:#1a63e9;font-size: 36px;">
+		    		<a href="taskExecutor.html" id="openPopover" class="mui-btn mui-btn-primary mui-btn-block" style="background-color: rgba(0,0,0,0);border: 1px solid rgba(0,0,0,0);"></a>
+		    	</span>
+		   </p>
+		   <p style="width: 180px; margin-top: -20px;text-align: right;" class="point1">
+		   	
+		    	<span class="mui-icon mui-icon-location-filled" style="color:#1a63e9;font-size: 36px; color: #FFA500;">
+		    		<a href="taskExecutor.html" id="openPopover" class="mui-btn mui-btn-primary mui-btn-block" style="background-color: rgba(0,0,0,0);border: 1px solid rgba(0,0,0,0);"></a>
+
+		    	</span>
+		   	
+		    </p>
+		  </div>
+		    
+		<!--
+	描述：底部开始
+-->
+</div>
+	</body>
+
+</html>

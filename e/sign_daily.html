@@ -1,0 +1,161 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="css/calendar.css">
+		<style>
+		body{
+			background-color: #fff;
+		}
+		/*顶部开始*/
+		.mui-bar-nav{
+				background-image: url(images/qiandaobc.png);
+				background-size: cover;
+				height: 50px;				
+			}
+			.mui-pull-left{
+				color: #fff;
+				line-height: 25px;
+			}
+			
+			
+			.mui-title{
+				text-align: center;
+				line-height: 50px;
+				color: #FFFFff;
+			}
+			
+			/*顶部结束*/
+			/*主体开始*/
+			.mui-content{
+				background-image: url(images/qiandaobc.png);
+				height: 30vh;
+				width: 100vw;
+				background-size: cover;
+				background-repeat: no-repeat;
+				text-align: center;
+				padding-left: 135px;
+				margin:50px auto 0;
+			}
+			.bigring{
+				width:110px;
+				height: 110px;
+				background-color: #20547b;
+				border-radius: 110px;
+				padding: 10px;
+				
+			}
+			
+			.btn1{
+				background-color: #20547b;
+				font-size: 20px;
+				width: 90px;
+				height: 90px;
+				border-radius: 90px;
+				border: solid 1px #FFFFFF;
+				color: #fff;
+				
+			}
+		</style>
+	</head>
+
+	<body>
+		<script src="js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init()
+		</script>
+		<header class="mui-bar mui-bar-nav" style="box-shadow: none;">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left" href="##"></a>
+			<h1 class="mui-title">签到</h1>
+		</header>
+		<!--头部完成-->
+		<div class="mui-content">
+			<div class="bigring">
+				<button class="mui-btn btn1" type="button" id="signNow" name="signNow">签 到</button>
+			</div>
+		</div>
+		<div style="margin: 0;">
+	<!-- <div id="calendar" class="calendar">
+    <div class="calendar-title">
+      <a href="#" class="title"><span class="year">2017/</span><span class="month">04</span></a>
+      <a href="javascript:;" id="backToday">T</a>
+      <div class="arrow">
+        <span class="arrow-prev"></span>
+        <span class="arrow-next"></span>
+      </div>
+    </div>
+    <ul class="calendar-week">
+      <li class="item">日</li>
+      <li class="item">日</li>
+      <li class="item">日</li>
+      <li class="item">日</li>
+      <li class="item">日</li>
+      <li class="item">日</li>
+      <li class="item">日</li>
+    </ul>
+    <ul class="calendar-date">
+      <li class="item">26</li>
+      <li class="item">26</li>
+      <li class="item">26</li>
+      <li class="item">26</li>
+      <li class="item">26</li>
+      <li class="item">26</li>
+      <li class="item">26</li>
+      <li class="item">26</li>
+      <li class="item">26</li>
+      <li class="item">26</li>
+      <li class="item">26</li>
+      <li class="item">26</li>
+      <li class="item">26</li>
+      <li class="item">26</li>
+      <li class="item">26</li>
+      <li class="item">26</li>
+      <li class="item">26</li>
+      <li class="item">26</li>
+      <li class="item">26</li>
+      <li class="item">26</li>
+      <li class="item">26</li>
+      <li class="item">26</li>
+      <li class="item">26</li>
+      <li class="item">26</li>
+      <li class="item">26</li>
+      <li class="item">26</li>
+      <li class="item">26</li>
+      <li class="item">26</li>
+      <li class="item">26</li>
+      <li class="item">26</li>
+      <li class="item">26</li>
+      <li class="item">26</li>
+      <li class="item">26</li>
+      <li class="item">26</li>
+      <li class="item">26</li>
+      <li class="item">26</li>
+      <li class="item">26</li>
+      <li class="item">26</li>
+      <li class="item">26</li>
+      <li class="item">26</li>
+      <li class="item">26</li>
+      <li class="item">26</li>
+    </ul>
+    <div class="calendar-today">
+      <i class="triangle"></i>
+      <p class="date">2017/04/29</p>
+      <p class="week">星期六</p>
+    </div>
+  </div> -->
+  <div id="calendar" class="calendar"></div>
+</div>
+
+
+
+  <script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+  <script src="js/calendar.js"></script>
+  
+
+	</body>
+
+</html>

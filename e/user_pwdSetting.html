@@ -1,0 +1,233 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<style>
+			.mui-bar-nav{
+			 background: -webkit-linear-gradient(left, #3089c9 , #31b6c9); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(right, #3089c9 , #31b6c9); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(right, #3089c9 , #31b6c9); /* Firefox 3.6 - 15 */
+    background: linear-gradient(to right, #3089c9 , #31b6c9); /* 标准的语法（必须放在最后） */
+			}
+			.mui-pull-left{
+				color: #fff;
+			}
+			.mui-title{
+				color: #fff;
+				font-size: 14px;
+			}
+			#shen{
+				width: 100%;
+				height: 240px;;
+				 background: -webkit-linear-gradient(left, #3089c9 , #31b6c9); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(right, #3089c9 , #31b6c9); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(right, #3089c9 , #31b6c9); /* Firefox 3.6 - 15 */
+    background: linear-gradient(to right, #3089c9 , #31b6c9); /* 标准的语法（必须放在最后） */
+				background-size: 100% 240px;
+				color: #fff;
+
+				
+			}
+			.mui-btn-outlined:active{
+				border-bottom:3px solid #007AFF;
+				background-color: rgba(0,0,0,0.68);
+				
+				
+		
+			}
+			.mui-btn-outlined{
+				border: none;
+				width: 23%;	
+				height: 50px;
+				color: #fff;
+				border-radius: 0;
+				text-align: center;
+				padding: 0px;
+				
+			}
+			.shen-wei{
+				width: 100%;
+				height: 50px;
+				background-color: #000000;
+				opacity: 0.5;
+				position:relative;
+				top: 45px;;
+			}
+			.shenshen{
+				text-align: center;
+				margin:0 auto;
+				line-height: 50px;
+	
+				
+			}
+			body{
+				line-height: 50px;
+			}
+			.mui-media-body{
+				width: 70%;
+			}
+			.mui-media-body p{
+				font-size: 12px;
+				margin-left: 5px;
+			}
+			ul li img{
+				border-radius: 50px;
+			}
+			ul{
+				display: block;
+			}
+			ul li a .mui-media-body{
+				width: 70%;
+				height: 50px;
+				
+			}
+			.mui-media-body h4{
+				font-size: 14px;
+				height: 0px;
+				margin-left: 5px;
+			}
+						ul li .mui-btn{
+				border: 1px solid #000000;
+				border-radius: 3px;
+				width: 50px;
+				height: 26px;
+				font-size: 12px;
+				line-height: 15px;
+				
+			}
+			ul li .mui-btn-outlined{
+				border: 1px solid red;
+				border-radius: 3px;
+				width: 50px;
+				height: 26px;
+				font-size: 12px;
+				margin-right: 10px;
+				
+			}
+			ul li .heikuang{
+				border: 1px solid #000000;
+				border-radius: 3px;
+				width: 50px;
+				height: 26px;
+				font-size: 12px;
+				line-height: 15px;
+				margin-right: 5px;
+				
+			}
+			ul li .youbian{
+				float:right;
+				position: relative;
+				top: -40px;
+			}
+			ul li{
+				height: 70px;
+			}
+			.shenzi{
+				text-align: center;
+				line-height: 30px;
+				position: relative;
+				top: 50px;
+				
+			}
+			.shenzi img{
+				width: 95px;
+				border-radius: 50px;
+				border: 5px solid #6D6D72;
+			}
+			.shenzi p{
+				color: #fff;
+			}
+			.shenzi img:active{
+				border: 5px solid #fff;
+				opacity: 0.8;
+			}
+			.mui-bar-nav{
+				border:none;
+				box-shadow: none;
+			}
+			.mui-input-row{
+				border-bottom: 1px solid #000000;
+				margin-bottom: 20px;
+
+
+			
+			}
+			.gaimima{
+				
+				width: 80%;
+				margin: 0 auto;
+				margin-top: 50px;
+			}
+		.mui-btn-primary{
+			height: 50px;
+		
+		}
+		.mui-content-padded{
+			width: 90%;
+			margin: auto;
+		}
+	
+		</style>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">个人主页</h1>
+		</header>
+		<div class="mui-content">
+		<div id="shen">
+			<div class="shenzi">
+				<img src="images/icon02.png" href="#">
+				<p>叶良辰</p>
+			</div>
+			<div class="shen-wei">
+			   <div class="shen-shen">
+		        <button type="button" class="mui-btn mui-btn-outlined" onclick="window.location='use_unreadMsg.html'">未读信息</button>|
+				<button type="button" class="mui-btn mui-btn-outlined" onclick="window.location='user_toFocusMe.html'">关注的人</button>|
+			    <button type="button" class="mui-btn mui-btn-outlined" onclick="window.location='user_toFocusMe.html'">关注的请求</button>|
+			    <button type="button" class="mui-btn mui-btn-outlined" onclick="window.location='user_pwdSetting.html'">重置密码</button>
+			   </div>
+			</div>
+		</div>
+		<div class="gaimima">
+    <div class="mui-input-row">
+        <label class="ymm">原密码：</label>
+        <input type="password" class="mui-input-password" id="prePwd" placeholder="请输入原密码">
+    </div>
+    
+ <div class="mui-input-row">
+        <label class="xmm">新密码：</label>
+        <input type="password" class="mui-input-password" id="newPwd" placeholder="请输入新密码">
+    </div>
+    
+    </div>
+    <div class="mui-content-padded">
+				<button id="comfirm" class="mui-btn mui-btn-block mui-btn-primary" onclick="error()">确定</button>
+			</div>
+		<script src="js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init()
+		</script>
+		<script>
+			function error() {
+				var plzprePwd = document.getElementById("prePwd").value;
+				var plznewPwd = document.getElementById("newPwd").value;
+				if(plzprePwd==""){
+					mui.toast("请输入原密码");
+					return;
+				}else if(plznewPwd==""){
+					mui.toast("请输入新密码");
+					return;
+				}else{}
+				
+			}
+			
+		</script>
+	</body>
+
+</html>

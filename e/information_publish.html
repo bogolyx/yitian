@@ -1,0 +1,210 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="css/iconfont1.css" />
+	<style>
+		body{
+			background-color: #f3f3f3;
+		}
+		/*顶部开始*/
+		.mui-bar-nav{
+				background-color:#3088c9;
+				height: 50px;				
+			}
+			.mui-pull-left{
+				color: #fff;
+				line-height: 25px;
+			}
+			
+			
+			.mui-title{
+				text-align: center;
+				line-height: 50px;
+				color: #FFFFff;
+			}
+			
+			/*顶部结束*/
+			/*主体开始*/
+			.mui-table-view-cell{
+				background-color: #f3f3f3;
+				font-size:14px;
+				font-weight: 600;
+				
+			}
+			#mui-selected{
+				opacity: 0.37;
+			}
+			#mui-selected2{
+				opacity: 0.37;
+			}
+			#mui-selected2-2{
+				opacity: 0.37;
+			}
+			#mui-selected3{
+				opacity: 0.37;
+			}
+			#mui-selected3-3{
+				opacity: 0.37;
+			}
+			#description{
+				background-color: #f3f3f3;
+			}
+			</style>
+	</head>
+
+	<body>
+		<script src="js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init()
+		</script>
+		<script>
+			function changetm(){
+				var optiopntmd = document.getElementById("mui-selected").style.opacity;
+				if(optiopntmd !== 1||optiopntmd2 !==1){
+					document.getElementById("mui-selected").style.opacity = 1;
+				}else{
+					document.getElementById("mui-selected").style.opacity = 0.37;
+				}
+			}
+		</script>
+		<script>
+			function changetm2(){
+				var optiopntmd = document.getElementById("mui-selected2").style.opacity;
+				var optiopntmd2 = document.getElementById("mui-selected2-2").style.opacity;
+				if(optiopntmd !== 1){
+					document.getElementById("mui-selected2").style.opacity = 1;
+					document.getElementById("mui-selected2-2").style.opacity = 1;
+				}else{
+					document.getElementById("mui-selected2").style.opacity = 0.37;
+					document.getElementById("mui-selected2-2").style.opacity = 0.37;
+				}
+			}
+		</script>
+		<script>
+			function changetm3(){
+				var optiopntmd = document.getElementById("mui-selected3").style.opacity;
+				var optiopntmd3 = document.getElementById("mui-selected3-3").style.opacity;
+				if(optiopntmd !== 1|| optiopntmd3 !== 1){
+					document.getElementById("mui-selected3").style.opacity = 1;
+					document.getElementById("mui-selected3-3").style.opacity = 1;
+				}else{
+					document.getElementById("mui-selected3").style.opacity = 0.37;
+					document.getElementById("mui-selected3-3").style.opacity = 0.37;
+				}
+			}
+		</script>
+	<header class="mui-bar mui-bar-nav">
+		<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left" href="##"></a>
+		<h1 class="mui-title" style="font-size: 14px;">发布资讯</h1>
+	</header>
+		<!--头部完成-->
+		<!--主体开始-->
+<ul class="mui-table-view" style="margin-top: 50px;">
+    <li class="mui-table-view-cell">	
+	    <div class="mui-input-row" style="height: 28px;">
+	        <label class="title" style="padding-left: 0;">主题：</label>
+	   		<input type="text" class="mui-input-clear" placeholder="请输入主题"style="height: 40px;font-size: 14px;" id="title">
+	    </div>
+	</li>
+	<li class="mui-table-view-cell">	
+	    <div class="mui-input-row" style="height: 28px;">
+	        <label class="title" style="padding-left: 0;">副主题：</label>
+	   		<input type="text" class="mui-input-clear" placeholder="请输入副主题"style="height: 40px;font-size: 14px;" id="subTitle">
+	    </div>
+	</li>
+    <li class="mui-table-view-cell" style="height: 49px;">
+        <div class="mui-input-row mui-select" >
+            <label style="padding-left: 0;">类型:</label>
+            <select id="type" class="type" name="type" style="background-color: #f3f3f3;color: rgb(117,117,117);" onclick="changetm()">	
+                <option value="1" >紧急通知</option>
+                <option value="2" >正常消息</option>
+                <option value="3" selected="selected" disabled="disabled">请选择类型</option>
+            </select>
+        </div>
+    </li>
+    <li class="mui-table-view-cell" >
+    	<label style="padding-left: 0;">内容：</label>
+    	<textarea id="content" placeholder="限200字" maxlength="400"style="width: 100%; height: 50px; font-size: 14px;"></textarea>
+    </li>
+    <li class="mui-table-view-cell" style="height: 49px;">
+        <div class="mui-input-row mui-select" >
+            <label style="padding-left: 0;">发布人：</label>
+            <select id="publisher" style="background-color: #f3f3f3;" onclick="changetm()">
+                <option value="1" selected="selected">武松</option>
+                <option value="2" >宋江</option>
+                <option value="2" >林冲</option>
+            </select>
+        </div>
+    </li>
+    <li class="mui-table-view-cell" style="height: 49px;">
+        <div class="mui-input-row mui-select" >
+            <label style="padding-left: 0;">审核人：</label>
+            <select id="auditor" style="background-color: #f3f3f3;" onclick="changetm()">
+                <option value="1" selected="selected">关羽</option>
+                <option value="2" >刘备</option>
+                <option value="2" >张飞</option>
+            </select>
+        </div>
+    </li>
+    
+    <li class="mui-table-view-cell" style="height: 49px; color:rgb(117,117,117);">
+    	<div class="mui-input-row" >
+            <label style="padding-left: 0;" >发布时间:</label>
+            <input type="date" id="publishTime" value="默认时间"/>
+        </div>
+    </li>
+</ul>
+		<!--主体结束-->
+		<!--按钮开始-->
+		<button type="button" class="mui-btn mui-btn-warning" style="width:40%;height: 48px;font-weight: 600; margin: 40px 3% 0 3%; background-color: #ff6d00;" id="photo">选择图片</button>
+		<button type="button" class="mui-btn mui-btn-warning" style="width:40%;height: 48px;font-weight: 600;margin: 40px 0 0 5%;  background-color:#ff9c00;" onclick="error()">发布</button>
+
+		
+		<script>
+			function error() {
+				var plztitle = document.getElementById("title").value;
+				var plzsubTitle = document.getElementById("subTitle").value;
+				var plztype = document.getElementById("type").value;
+				var plzcontent = document.getElementById("content").value;
+				var plzpublisher = document.getElementById("publisher").value;
+				var plzauditor = document.getElementById("auditor").value;
+				var plzpublishTime = document.getElementById("publishTime").value;
+				var plzphoto = document.getElementById("photo").value;
+				if(plztitle==""){
+					mui.toast("请输入主题");
+					return;
+				}else if(plzsubTitle==""){
+					mui.toast("请输入副主题");
+					return;
+				}else if(plztype==""){
+					mui.toast("请选择任务类型");
+					return;
+				}else if(plzcontent==""){
+					mui.toast("请输入任务内容");
+					return;
+				}else if(plzpublisher==""){
+					mui.toast("请输入发布人");
+					return;
+				}else if(plzauditor==""){
+					mui.toast("请输入审核人");
+					return;
+				}else if(plzpublishTime==""){
+					mui.toast("请选择发布时间");
+					return;
+				}else if(plzphoto==""){
+					mui.toast("请选择视频");
+					return;
+				}
+				else{}
+				
+			}
+			
+		</script>
+	</body>
+
+</html>

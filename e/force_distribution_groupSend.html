@@ -1,0 +1,179 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+	    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+	    <style>
+	    	footer {
+			position: fixed;
+			width: 100%;
+			height: 50px;
+			min-height: 50px;
+			border-top: solid 1px #bbb;
+			left: 0px;
+			bottom: 0px;
+			overflow: hidden;
+			padding: 0px 50px;
+			background-color: #fafafa;
+		}
+		.footer-left {
+			position: absolute;
+			width: 50px;
+			height: 50px;
+			left: 0px;
+			bottom: 0px;
+			text-align: center;
+			vertical-align: middle;
+			line-height: 100%;
+			padding: 12px 4px;
+		}
+		.footer-left input[type="file"] {
+			position: absolute;
+			left: 0px;
+			top: 0px;
+			width: 100%;
+			height: 100%;
+			opacity: 0;
+			cursor: pointer;
+			z-index: 0;
+		}
+		
+		.footer-right {
+			position: absolute;
+			width: 50px;
+			height: 50px;
+			right: 0px;
+			bottom: 0px;
+			text-align: center;
+			vertical-align: middle;
+			line-height: 100%;
+			
+			display: inline-block;
+		}
+		.footer-center {
+			height: 100%;
+			padding: 5px 0px;
+		}
+		.footer-center [class*=input] {
+			width: 100%;
+			height: 100%;
+			border-radius: 5px;
+		}
+		.footer-center .input-text {
+			background: #fff;
+			border: solid 1px #ddd;
+			padding: 10px !important;
+			font-size: 16px !important;
+			line-height: 18px !important;
+			font-family: verdana !important;
+			overflow: hidden;
+		}
+		.footer-center .input-sound {
+			background-color: #eee;
+		}
+		
+		footer .mui-icon {
+				color: #000;
+		}
+		footer .mui-icon:active {
+			color: #007AFF !important;
+		}
+		
+		.hz{
+			text-align: center; height: 54px; background-color: #fff;
+		}
+		.mui-left{
+			border-bottom: 1px solid #d2e5f3; padding: 10px 0; display: none;
+			
+		}
+		.label{
+			background:url(img/ico-1.png) no-repeat 42% 0;  margin-left: -42%;
+		}
+		.checkbox{
+			margin-top: 10px;
+		}
+		.a-click{
+			text-align: center; width: 100%; line-height:30px;
+		}
+	    </style>
+	 
+	</head>
+
+	<body>
+		<script src="js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init()
+		</script>
+		<header class="mui-bar mui-bar-nav">
+		    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		    <h1 class="mui-title">群发短信</h1>
+		</header>
+		<div class="mui-content">
+		 <div class="hz" id="size">
+		 <div id="userNameList">
+		 	<div class="mui-input-row mui-checkbox mui-left"  id="yichan">
+		 	  <label class="label">曹操</label>
+		 	  <input name="checkbox1" type="checkbox" class="checkbox" >
+		 	</div>
+		 	<div class="mui-input-row mui-checkbox mui-left"   id="yichan1">
+		 	  <label class="label">诸葛亮</label>
+		 	  <input name="checkbox1" type="checkbox" class="checkbox" >
+		 	</div>
+		 	<div class="mui-input-row mui-checkbox mui-left"   id="yichan2">
+		 	  <label class="label">司马懿</label>
+		 	  <input name="checkbox1" type="checkbox"  class="checkbox">
+		 	</div>
+		 	</div>
+		<a href="###" class="a-click"  onclick="move()" id="line">	
+			<span style="font-size: 12px;" id="hieed">选择联系人<br></span>
+			<span class="mui-icon mui-icon-arrowup" id="mui-icon-arrowup" style="display: none;"></span>
+			<span class="mui-icon mui-icon-arrowdown" id="mui-icon-arrowdown"></span>
+		</a>
+		
+  
+		</div>
+		<footer>
+		<div class="footer-left">
+			<i id='file' class="mui-icon mui-icon-paperclip"></i>
+		</div>
+		<div class="footer-center">
+			<textarea id='content' type="text" class='input-text'></textarea>
+		</div>
+		<div class="footer-right">
+			<button class="mui-icon mui-icon-paperplane" style="background-color: #1a63e9; color: #fff; height: 50px;" id="sendMessage"></button>
+		</div>
+	</footer>
+	</body>
+<script>
+    	var arr=1;
+    	function move(){
+    		if(arr){
+    			document.getElementById("size").style.height="380px";
+    			document.getElementById("hieed").style.display="none";
+    			document.getElementById("mui-icon-arrowup").style.display="block";
+    			document.getElementById("mui-icon-arrowdown").style.display="none";
+    			document.getElementById("mui-icon-arrowup").style.lineHeight="360px";
+    			document.getElementById("yichan").style.display="block";
+    			document.getElementById("yichan1").style.display="block";
+    			document.getElementById("yichan2").style.display="block";
+    			arr=0
+    		}
+    		else{
+    			document.getElementById("size").style.height="54px";
+    			document.getElementById("hieed").style.display="block";
+    			document.getElementById("mui-icon-arrowup").style.display="none";
+    			document.getElementById("mui-icon-arrowdown").style.display="block";
+    			document.getElementById("yichan").style.display="none";
+    			document.getElementById("yichan1").style.display="none";
+    			document.getElementById("yichan2").style.display="none";
+    			arr=1
+    			
+    		}
+    		
+    	}
+    </script>
+</html>

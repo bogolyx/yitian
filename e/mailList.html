@@ -1,0 +1,188 @@
+!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min1.css" rel="stylesheet" />
+		<style>
+		body{background-color: #fff;}
+			.mui-bar-nav{
+				background-color:#3088c9;
+				height: 50px;
+				
+			}
+			.mui-pull-left{
+				color: #fff;
+				line-height: 25px;
+			}
+			
+			
+			.mui-title{
+				text-align: center;
+				line-height: 50px;
+				color: #FFFFff;
+			}
+			.mui-icon-search{
+				color: #fff;
+				line-height: 25px;
+			}
+			#searchbtn{
+				position: absolute;
+				right: 10px;
+			}
+			#search{
+				display: none;
+				
+			}
+			
+			/*头部结束*/
+			
+			
+			#anniu{
+				width: 100%;
+				height:51px;
+				display: inline;
+				
+			}
+
+			.mui-btn-outlined {
+				border: none;
+				background-color: #fff;
+				height: 50px;
+				margin-top: 50px;
+				
+			}
+			/*按钮结束*/
+			
+			.mui-collapse{
+				background-color: #f3f3f3;
+				font-size:14px;
+				font-weight: 600;
+				
+			}
+			
+				#byDepartment{
+				width: 50%;
+				float: left;
+				
+			}
+			#byLabel{
+				width: 50%;
+}
+			.mui-btn-outlined {
+				border: none;
+				background-color: #fff;
+				height: 50px;
+				
+			}
+			.mui-btn-outlined{
+				margin-top: 30px;
+			}
+			.mui-table-view{
+				top: 80px;
+				padding-top: 0px;
+				
+			}
+			.mui-collapse-content p{
+				margin: 15px 0px;
+				border-style:none none solid none;
+				border-color:#EEEEEE;
+				border-width: 1px;
+			}
+			.mui-collapse-content p span{
+				float: right;
+				margin-right: 72%;
+			}
+		</style>
+	</head>
+
+	<body id="contact">
+		<script src="js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init()
+		</script>
+		<script>
+			function change(){
+				var divDisp = document.getElementById("search").style.display;
+				if (divDisp == "block") { document.getElementById("search").style.display = "none";}
+				else { document.getElementById("search").style.display = "block"; 
+			}
+			}
+		</script>
+		<script>
+			function divMove(){
+				var divmargin = document.getElementById("main_body").style.marginTop;
+				if (divmargin == 0+"px") { document.getElementById("main_body").style.marginTop =40+"px" ;}
+				else if (divmargin == 40+"px"){ document.getElementById("main_body").style.marginTop =0+"px";
+			}else { document.getElementById("main_body").style.marginTop =40+"px";
+			}
+			}
+		</script>
+		<script>
+			mui.plusReady(function(e){
+				var cw=plus.webview.currentWebview();
+				var titlename=cw.title;
+				var haeder=document.querySelector(".mui-title");
+				header.innerText=titlename;
+			})
+		</script>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left" href="##"></a>
+			<h1 class="mui-title">通讯录</h1>
+	<a class="mui-action-back mui-icon mui-iocn-right-nav mui-icon mui-icon-search" href="#" style="float: right;" onclick="divMove();change()"></a>
+          <div class="mui-input-row mui-search">
+    <input type="search" class="mui-input-clear" placeholder="输入搜索内容" id="search">
+</div>  
+		</header>
+		<div id="main_body">
+		<div id="anniu">
+         <button id="byDepartment" type="button" class="mui-btn mui-btn-outlined" style="width: 50%;" onclick="window.location='mailList1.html'">按部门</button>
+         <button id="byLabel" ype="button" class="mui-btn mui-btn-outlined" style="width: 50%; float: right;" onclick="window.location='mailList.html'"><span style="border-style:none none solid none;border-color:#B6B6B6;border-width: 1px;padding-bottom: 16.5px;">按标签</span></button>
+				</div>
+				
+			
+    	
+    	    <div >
+				<ul id="nav" class="mui-table-view"> 
+    <li class="mui-table-view-cell mui-collapse">
+        <a class="mui-navigate-right" href="###"  style="background-color: #FFFFFF; border-style:none none solid none;border-color:#00B7EE;border-width: 1px;"><img src="images/yonhu.png" style="width: 20px;" /><span style="margin-left: 20px;letter-spacing:4px;">家人</span></a>
+        <div class="mui-collapse-content">
+                                       <p onclick="window.location='mailList_details.html'"><img src="images/blue.png" style="width: 20px;margin-left:20px ;" ><span >张三</span></p>
+                                        <p onclick="window.location='mailList_details.html'"><img src="images/red.png" style="width: 20px;margin-left:20px ;"><span >李四</span></p>
+                                       <p onclick="window.location='mailList_details.html'"><img src="images/blue.png" style="width: 20px;margin-left:20px ;" ><span >王五</span></p>
+                                        <p onclick="window.location='mailList_details.html'"><img src="images/red.png" style="width: 20px;margin-left:20px ;"><span >金六</span></p>
+                                       <p onclick="window.location='mailList_details.html'"><img src="images/blue.png" style="width: 20px;margin-left:20px ;" ><span >张三</span></p>
+                                        <p onclick="window.location='mailList_details.html'"><img src="images/red.png" style="width: 20px;margin-left:20px ;"><span >张三</span></p>
+                                       <p onclick="window.location='mailList_details.html'"><img src="images/blue.png" style="width: 20px;margin-left:20px ;" ><span >张三</span></p>
+                                        <p onclick="window.location='mailList_details.html'"><img src="images/red.png" style="width: 20px;margin-left:20px ;"><span >张三</span></p>
+    	                        </div>
+            </div>
+ 
+	</li>
+</ul>
+	<ul class="mui-table-view"> 
+    <li class="mui-table-view-cell mui-collapse">
+        <a class="mui-navigate-right" href="###" style="background-color: #FFFFFF;border-style:none none solid none;border-color:#00B7EE;border-width: 1px;"><img src="images/yonhu.png" style="width: 20px;" /><span style="margin-left: 20px;letter-spacing:4px;">老乡</span></a>
+        <div class="mui-collapse-content">
+                                               <p onclick="window.location='mailList_details.html'"><img src="images/blue.png" style="width: 20px;margin-left:20px ;" ><span >张三</span></p>
+                                        <p onclick="window.location='mailList_details.html'"><img src="images/red.png" style="width: 20px;margin-left:20px ;"><span >李四</span></p>
+                                       <p onclick="window.location='mailList_details.html'"><img src="images/blue.png" style="width: 20px;margin-left:20px ;" ><span >王五</span></p>
+                                        <p onclick="window.location='mailList_details.html'"><img src="images/red.png" style="width: 20px;margin-left:20px ;"><span >金六</span></p>
+                                       <p onclick="window.location='mailList_details.html'"><img src="images/blue.png" style="width: 20px;margin-left:20px ;" ><span >张三</span></p>
+                                        <p onclick="window.location='mailList_details.html'"><img src="images/red.png" style="width: 20px;margin-left:20px ;"><span >张三</span></p>
+                                       <p onclick="window.location='mailList_details.html'"><img src="images/blue.png" style="width: 20px;margin-left:20px ;" ><span >张三</span></p>
+                                        <p onclick="window.location='mailList_details.html'"><img src="images/red.png" style="width: 20px;margin-left:20px ;"><span >张三</span></p>
+    	                       </div>
+    	
+	</li>
+</ul>
+			<!--底部开始-->
+
+					
+				
+		</div>
+	</body>
+
+</html>

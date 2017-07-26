@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<style>
+		body{
+			background-color: #fff;
+		}
+		/*顶部开始*/
+		.mui-bar-nav{
+				background-color:#3088c9;
+				height: 50px;				
+			}
+			.mui-pull-left{
+				color: #fff;
+				line-height: 25px;
+			}
+			
+			
+			.mui-title{
+				text-align: center;
+				line-height: 50px;
+				color: #FFFFff;
+			}
+			.mui-btn{
+				float: right;
+				position:relative; 
+				background-color: #3088C9;
+				border: 0;
+				color: #fff;
+			}
+			/*顶部结束*/
+			/*主体开始*/
+			.mui-card{
+				background-color: #f2f2f2;
+				width: 100%;
+				margin-top: 40px;
+				margin-left: 0;
+				margin-bottom: 0;
+			}
+			.mui-card-content{
+				height: 200px;
+				margin: 0;
+			}
+			.mui-media-body{
+				text-align: center;
+			}
+		</style>
+	</head>
+
+	<body>
+		<script src="js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init()
+		</script>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left" href="##"></a>
+			<h1 class="mui-title">通讯录</h1>
+			<button type="button" class="mui-btn" id="toFocus">关注</button>
+		</header>
+		<!--头部完成-->
+		<div class="mui-card">
+			<div class="mui-card-content" style="text-align: center; line-height: 50px;">
+				<img id="photo" src="images/pic.png" style="width: 112px; height: 107px; border-radius: 100px; margin: 0 auto; position:relative; top: 20px;;" />
+				<div class="mui-media-body" id="name" style="text-align: center;">
+					文文文
+				</div>
+			</div>		
+		</div>
+		<!--
+        	描述：头像完成
+        -->
+		<ul class="mui-table-view" style="border-top: 0;">
+    <li class="mui-table-view-cell" style="border-top: 0;"><img src="images/phone.png" style="padding: 2px 20px 0 10px;"/>电话:<span id="phone" style="font-size: 16px;">13758615549</span></li>
+    <li class="mui-table-view-cell"><img src="images/biaoqian.png" style="padding: 0 20px 0 10px;"/>标签:<span id="label" style="font-size: 16px;">无</span></li>
+</ul>
+<!--标签完成-->
+<!--
+	描述：底部开始
+-->
+
+
+
+
+
+
+
+	</body>
+
+</html>

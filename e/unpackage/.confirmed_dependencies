@@ -1,0 +1,55 @@
+{
+	"index.html": {
+		"resources": [
+			"images/动态1.png",
+			"images/地球1.png",
+			"images/12.png",
+			"images/培训1.png",
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"css/mui.min.css",
+			"images/签到副本.png",
+			"images/巡逻车1.png",
+			"images/bg.jpg",
+			"images/globel.png",
+			"css/iconfont.css",
+			"fonts/iconfont.ttf",
+			"my_task.html"
+		],
+		"refer": [
+			"my_task.html"
+		]
+	},
+	"anyangcaichang.html": {
+		"resources": [
+			"images/map.png",
+			"css/mui.min.css",
+			"my_task.html",
+			"images/redflag.png"
+		],
+		"refer": [
+			"my_task.html"
+		]
+	},
+	"my_task.html": {
+		"resources": [
+			"images/task2.png",
+			"anyangcaichang.html",
+			"images/doing.png",
+			"images/lingxing.png",
+			"css/mui.min.css",
+			"images/task.png",
+			"images/task3.png",
+			"my_task_publish.html"
+		],
+		"refer": [
+			"anyangcaichang.html",
+			"my_task_publish.html"
+		]
+	},
+	"my_task_publish.html": {
+		"resources": [
+			"css/mui.min.css"
+		]
+	}
+}

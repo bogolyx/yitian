@@ -1,0 +1,151 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<style>
+		body{
+			background-color: #fff;
+		}
+		/*顶部开始*/
+		#mui-bar{
+			background-color:#3088c9;
+				height: 50px;
+		}
+		.mui-bar-nav{
+				background-color:#3088c9;
+				height: 50px;				
+			}
+			.mui-pull-left{
+				color: #fff;
+				line-height: 25px;
+			}
+			
+			
+			.mui-title{
+				text-align: center;
+				line-height: 50px;
+				color: #FFFFff;
+			}
+			.mui-btn{
+				float: right;
+				position:relative; 
+				background-color: #3088C9;
+				border: 0;
+				color: #fff;
+			}
+			/*顶部结束*/
+			/*主体开始*/
+			
+		</style>
+	</head>
+
+	<body>
+		<script src="js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init()
+		</script>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left" href="##"></a>
+			<h1 class="mui-title">任务列表</h1>
+			
+		</header>
+		 <nav class="mui-bar mui-bar-tab">
+	    		    <a class="mui-tab-item mui-active" id="work" href="index.html">
+	    		        <span class="mui-icon mui-icon-home"></span>
+	    		        <span class="mui-tab-label">工作</span>
+	    		    </a>
+	    		    <a class="mui-tab-item" id="discovery" href="mailList.html">
+	    		        <span class="mui-icon mui-icon-help"></span>
+	    		        <span class="mui-tab-label">发现</span>
+	    		    </a>
+	    		    <a class="mui-tab-item" id="mailList" href="mailList.html">
+	    		        <span class="mui-icon mui-icon-chat"></span>
+	    		        <span class="mui-tab-label">沟通</span>
+	    		    </a>
+	    		    <a class="mui-tab-item" id="user" href="user.html">
+	    		        <span class="mui-icon mui-icon-contact"></span>
+	    		        <span class="mui-tab-label">我</span>
+	    		    </a>
+	    		</nav>
+		<!--头部完成-->
+		<!--内容开始-->
+		<ul class="mui-table-view" style="margin-top: 50px;">
+     		<li class="mui-table-view-cell mui-collapse">
+            	<a class="mui-navigate-right" href="#">
+            	<img src="images/task.png" style="float: left;margin-top: 15px;">
+            	<h4 style=" margin-left: 30px; font-weight: bold; margin-top: 15px;">当前任务</h4>
+            	</a>
+            	<div class="mui-collapse-content" style="background-color: #f3f3f3; padding: 20px 0;">
+               <a href="my_task_detail.html"><img src="images/doing.png" style="float: left; margin-left: 20px;" />
+               <h5 id="currentTask" style="margin-top: 12px; margin-left: 85px; font-size: 16px;">瑞安市迪拜大酒店巡逻</h5></a>
+            	</div>
+       		</li>
+    		<li class="mui-table-view-cell mui-collapse">
+            	<a class="mui-navigate-right" href="#">
+            	<img src="images/task2.png" style="float: left;margin-top: 15px;">
+            	<h4 id="taskList" style=" margin-left: 30px; font-weight: bold; margin-top: 15px;">任务列表</h4>           	
+            	</a>
+            	<div class="mui-collapse-content" style="background-color: #f3f3f3; padding: 0px 0;">
+            		<ul class="mui-table-view" style="margin: 0;">
+            			<li class="mui-table-view-cell" style="height: 70px;">
+    						<button type="button" id="start" class="mui-btn mui-btn-warning" style="width:90%;height: 46px;font-weight: 600;margin: 0px 0 5px 5%;" onclick="window.location='my_task_publish.html'">发布新任务</button>
+    					</li>
+   						<li class="mui-table-view-cell">
+    						<a style="margin-left: -15px;" href="anyangcaichang.html" id="xunluo1"><img src="images/lingxing.png" style="float: left; margin-top: 15px;" />
+               				<h5 style="margin-top: 15px; margin-left: 25px;">瑞安安阳菜市场巡逻</h5></a>
+               				<button type="button"  class="mui-btn mui-btn-warning edit" style="background-color:#fff;color: #000;font-size: 25px; font-weight: 600;"><span class="mui-icon mui-icon-compose"></span></button>
+    					</li>
+    					<li class="mui-table-view-cell">
+	    					<a style="margin-left: -15px;" href="anyangcaichang.html" id="xunluo2"><img src="images/lingxing.png" style="float: left; margin-top: 15px;" />
+	               			<h5 style="margin-top: 15px; margin-left: 25px;">瑞安万隆花园巡逻</h5></a>
+	               			<button type="button"  class="mui-btn mui-btn-warning edit" style="background-color:#fff;color: #000;font-size: 25px; font-weight: 600;"><span class="mui-icon mui-icon-compose"></span></button>
+    					</li>
+    					<li class="mui-table-view-cell">
+	    					<a style="margin-left: -15px;" href="anyangcaichang.html" id="xunluo3"><img src="images/lingxing.png" style="float: left; margin-top: 15px;" />
+	               			<h5 style="margin-top: 15px; margin-left: 25px;">瑞安瑞安商城巡逻</h5></a>
+	               			<button type="button" class="mui-btn mui-btn-warning edit" style="background-color:#fff;color: #000;font-size: 25px; font-weight: 600;"><span class="mui-icon mui-icon-compose"></span></button>
+    					</li>
+					</ul>
+            	</div>
+        	</li>
+			<li class="mui-table-view-cell mui-collapse">
+        		<a class="mui-navigate-right" href="#">
+	        	<img src="images/task3.png" style="float: left;margin-top: 15px;">
+	            <h4 id="historyTask" style=" margin-left: 30px; font-weight: bold; margin-top: 15px;">历史任务</h4>
+	       		</a>
+        		<div class="mui-collapse-content" style="background-color: #f3f3f3; padding: 0px 0;">
+            		<ul class="mui-table-view" style="margin: 0;">
+						<li class="mui-table-view-cell">
+							<a style="margin-left: -15px;" href="anyangcaichang.html" id="xunluo4"><img src="images/lingxing.png" style="float: left; margin-top: 15px;" />
+		           			<h5 style="margin-top: 15px; margin-left: 25px;">瑞安安康路巡逻</h5>
+							</a>
+							<button type="button" class="mui-btn mui-btn-warning reuse" style="background-color:#fff;color: #000;font-size: 25px; font-weight: 600;"><span class="mui-icon mui-icon-undo"></span></button>
+						</li>
+						<li class="mui-table-view-cell">
+							<a style="margin-left: -15px;" href="anyangcaichang.html" id="xunluo5"><img src="images/lingxing.png" style="float: left; margin-top: 15px;" />
+							
+		           			<h5 style="margin-top: 15px; margin-left: 25px;">瑞安万隆花园巡逻</h5></a>
+		           			<button type="button" class="mui-btn mui-btn-warning reuse" style="background-color:#fff;color: #000;font-size: 25px; font-weight: 600;"><span class="mui-icon mui-icon-undo"></span></button>
+						</li>
+						<li class="mui-table-view-cell">
+							<a style="margin-left: -15px;" href="anyangcaichang.html" id="xunluo6"><img src="images/lingxing.png" style="float: left; margin-top: 15px;" />
+							
+		           			<h5 style="margin-top: 15px; margin-left: 25px;">瑞安瑞安商城巡逻</h5></a>
+		           			<button type="button" class="mui-btn mui-btn-warning reuse" style="background-color:#fff;color: #000;font-size: 25px; font-weight: 600;"><span class="mui-icon mui-icon-undo"></span></button>
+						</li>
+					</ul>
+        		</div>
+    		</li>
+		</ul>
+
+	<script>
+mui('body').on('tap','a',function(){document.location.href=this.href;}); 
+</script>
+
+	</body>
+
+</html>

@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title></title>
+    <link href="css/mui.min.css" rel="stylesheet" />
+    <link href="css/iconfont.css" rel="stylesheet" />
+    <style>
+    	#slider{
+    		width: 100%;
+
+    
+    	}
+    	ul li img{
+    		width: 60px;
+    		height: 60px;
+    	}
+    	ul li{
+    		position: relative;
+    		right: 1px;;
+    		bottom: 2px;
+    	
+    	}
+    	.mui-col-sm-3{
+    	 height: 124px;
+
+    	}
+    	.qd img{
+    		position: relative;
+    		top: -5px;
+    	}
+    	.xl img{
+    		position: relative;
+    
+    	}
+    	.xl{
+    		border-left: 0px!important;
+    	}
+    	@media only screen and (min-width:414px) and (max-width:424px){
+    		.mui-col-sm-3{
+    	 height: 142px;
+
+    	}
+    	.mui-slider-item-duplicate{
+    		height: 220px!important;
+    	}
+    	.mui-col-sm-3{
+    			position: relative;
+    			top: -5px;
+    			border-top:none;
+    		}	
+    	.qd{
+    		border-top:0px!important;
+    		border-left:0px!important;
+    	}
+    	.llfb{
+    		border-top:0px!important;
+    	}
+    		.mui-slider-item p{
+
+			font-size: 18px!important;
+		}
+		.mui-slider-loop p{
+
+		font-size: 18px!important;
+		}
+		.mui-slider-item-duplicate p{
+
+		font-size: 18px!important;
+		}	
+    	}
+    	@media only screen and (max-width:320px) {
+    		.mui-col-sm-3{
+    	 height: 102px;
+
+    	}
+    		.mui-grid-9 .mui-col-sm-3 img{
+    		width: 50px;
+    		height: 50px;
+    		}
+    		.mui-col-sm-3 a{
+    			position: relative;
+    			top: -10px;
+    		}
+    			.mui-slider-item p{
+			position: relative;
+			top: 30px;
+			font-size: 12px!important;
+		}
+		.mui-slider-loop p{
+			position: relative;
+			top: 30px;
+		font-size: 12px!important;
+		}
+		.mui-slider-item-duplicate p{
+			position: relative;
+			top: 30px;
+		font-size: 12px!important;
+		}
+        .mui-slider{
+        	height: 170px!important;
+        } 
+    	}
+	#information{
+		width:50%!important;}	
+		
+		}
+		.mui-slider-item{
+			position: relative;
+			top: 30px;
+			left: 30px;
+			color: #fff;
+		}
+		.mui-slider-loop{
+			position: relative;
+			top: 30px;
+			left: 30px;
+			color: #fff;
+		}
+		.mui-slider-item p{
+			position: relative;
+			top: 30px;
+			font-size: 15px;
+			color: #fff;
+		}
+		.mui-slider-loop p{
+			position: relative;
+			top: 30px;
+		font-size: 15px;
+		color: #fff;
+		}
+		.mui-slider-item-duplicate p{
+			position: relative;
+		font-size: 15px;
+		color: #fff;
+		}
+		.mui-slider-item-duplicate{
+			position: relative;
+			color: #fff;
+		}
+		.qd{
+    		border-top:0px!important;
+    	}
+    	.llfb{
+    		border-top:0px!important;
+    	}
+
+		#slider{
+			background: -webkit-linear-gradient(, #3089c9 , #31b6c9); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(right, #3089c9 , #31b6c9); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(right, #3089c9 , #31b6c9); /* Firefox 3.6 - 15 */
+    background: linear-gradient(to right, #3089c9 , #31b6c9); /* 标准的语法（必须放在最后） */
+		}
+		.mui-bar-nav{
+			background: -webkit-linear-gradient(left, #3089c9 , #31b6c9); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(right, #3089c9 , #31b6c9); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(right, #3089c9 , #31b6c9); /* Firefox 3.6 - 15 */
+    background: linear-gradient(to right, #3089c9 , #31b6c9); 
+    /* 标准的语法（必须放在最后） */
+   outline: 0px!important;
+		}
+		.mui-pull-left{
+			color: #fff;
+		}
+		h1{
+			color: #fff!important;
+		}
+		@media only screen and (min-width: 425px) {
+    		.mui-col-sm-3{
+    	 height:122px!important;
+    	}
+    	.qd{
+    		border-left: 0px!important;
+    	}
+    	
+    	.mui-grid-9{
+    		
+    	width: 100%!important;
+    	text-align: center!important;
+    	margin: auto!important;
+    
+    }
+    .mui-col-sm-3 a img{
+    	width: 45px!important;
+    	height: 45px!important;
+    }
+    .mui-slider-item-duplicate{
+    	height: 170px!important;
+    }
+    }
+    
+    .dt{
+    	border-left: 0px!important;
+    }
+    .qd{
+    	border-left:0px!important;
+    }
+  
+    span.icon-1-qiandao{
+    	 background: linear-gradient(135deg, #fea875 , #fc8d73); 
+    	  -webkit-background-clip:text;   
+     color:transparent;
+    text-transform:uppercase;
+    }
+       
+        span.icon-diqiu{
+    	 background: linear-gradient(135deg, #42daec , #2d7eb6); 
+    	  -webkit-background-clip:text;   
+     color:transparent;
+    text-transform:uppercase;
+    }
+        span.icon-xlc{
+    	 background: linear-gradient(135deg, #7556bc , #aa6fb4); 
+    	  -webkit-background-clip:text;   
+     color:transparent;
+    text-transform:uppercase;
+    }
+        span.icon-px{
+    	 background: linear-gradient(135deg, #f5a185 , #ffc385); 
+    	  -webkit-background-clip:text;   
+     color:transparent;
+    text-transform:uppercase;
+    }
+        span.icon-dongtai{
+    	 background: linear-gradient(135deg, #ff834e , #ffc385); 
+    	  -webkit-background-clip:text;   
+     color:transparent;
+    text-transform:uppercase;
+    } 
+            span.icon-renwu{
+    	 background: linear-gradient(135deg, #30c971 , #308dc2); 
+    	  -webkit-background-clip:text;   
+     color:transparent;
+    text-transform:uppercase;
+    } 
+    .xl2{
+    	font-size: 2.9em!important;
+    }
+    .px2{
+    	font-size: 2.9em!important;
+    }
+    .wdrw2{
+    	margin-top: 2px;
+    	font-size: 2.2em!important;
+    }
+    #ts{
+    	width: 15px;
+    	height: 15px;
+    	background-color:#fe5f79 ;
+    	border-radius: 50px;
+    	margin: auto;
+    	    position: relative;
+    top: -70px;
+    left: 20px;
+    color:#fff;
+    text-align: center;
+    font-size: 8px ;
+    line-height: 17px;
+    }
+    </style>
+    <script src="js/mui.min.js"></script>
+    <link href="css/mui.min.css" rel="stylesheet"/>
+    <script type="text/javascript" charset="utf-8">
+      	mui.init();
+    </script>
+</head>
+<body>
+	<!-- 主界面菜单同时移动 -->
+
+	    <!-- 侧滑导航根容器 -->
+	    <div class="mui-off-canvas-wrap mui-draggable">
+	        <!-- 主页面容器 -->
+	        <div class="mui-inner-wrap">
+	            <!-- 菜单容器 -->
+	            <aside class="mui-off-canvas-left" id="offCanvasSide">
+	                <div class="mui-scroll-wrapper">
+	                    <div class="mui-scroll">
+	                        <!-- 菜单具体展示内容 -->
+	                        
+	                    </div>
+	                </div>
+	            </aside>
+	            <!-- 主页面标题 -->
+	            <header class="mui-bar mui-bar-nav">
+	                <a class="mui-icon mui-action-menu mui-icon-bars mui-pull-left" href="#offCanvasSide" id="info"></a>
+	                <h1 class="mui-title">e+轮值轮训</h1>
+	            </header>
+	            <nav class="mui-bar mui-bar-tab">
+	    		    <a class="mui-tab-item mui-active" id="work" href="index.html">
+	    		        <span class="mui-icon mui-icon-home"></span>
+	    		        <span class="mui-tab-label">工作</span>
+	    		    </a>
+	    		    <a class="mui-tab-item" id="discovery" href="mailList.html">
+	    		        <span class="mui-icon mui-icon-help"></span>
+	    		        <span class="mui-tab-label">发现</span>
+	    		    </a>
+	    		    <a class="mui-tab-item" id="mailList" href="mailList.html">
+	    		        <span class="mui-icon mui-icon-chat"></span>
+	    		        <span class="mui-tab-label">沟通</span>
+	    		    </a>
+	    		    <a class="mui-tab-item" id="user" href="user.html">
+	    		        <span class="mui-icon mui-icon-contact"></span>
+	    		        <span class="mui-tab-label">我</span>
+	    		    </a>
+	    		</nav>
+	            <!-- 主页面内容容器 -->
+	            
+	            <div class="mui-content mui-scroll-wrapper">
+	                <div class="mui-scroll">
+	                    <!-- 主界面具体展示内容 -->
+	                    <div id="slider" class="mui-slider" >
+	                      <div class="mui-slider-group mui-slider-loop">
+	                        <!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+	                        <div class="mui-slider-item mui-slider-item-duplicate" style="height: 180px;">
+	                        <h3>通知：轮播实训</h3>
+	                          <p>在动态资讯中添加一个“通知”用于判断是否在<br>这里显示（2017-6-12）</p>
+	                        </div>
+	                        <!-- 第一张 -->
+	                        <div class="mui-slider-item">
+	                                <h3>通知：轮播实训</h3>
+	                          <p>在动态资讯中添加一个“通知”用于判断是否在<br>这里显示（2017-6-12）</p>
+	                        </div>
+	                        <!-- 第二张 -->
+	                        <div class="mui-slider-item">
+	                                <h3>通知：轮播实训</h3>
+	                          <p>在动态资讯中添加一个“通知”用于判断是否在<br>这里显示（2017-6-12）</p>
+	                        </div>
+	                        <!-- 第三张 -->
+	                        <div class="mui-slider-item">
+	                                <h3>通知：轮播实训</h3>
+	                          <p>在动态资讯中添加一个“通知”用于判断是否在<br>这里显示（2017-6-12）</p>
+	                        </div>
+	                        <!-- 第四张 -->
+	                        <div class="mui-slider-item">
+	                                <h3>通知：轮播实训</h3>
+	                          <p>在动态资讯中添加一个“通知”用于判断是否在<br>这里显示（2017-6-12）</p>
+	                        </div>
+	                        <!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+	                        <div class="mui-slider-item mui-slider-item-duplicate">
+	                              <h3>通知：轮播实训</h3>
+	                          <p>在动态资讯中添加一个“通知”用于判断是否在<br>这里显示（2017-6-12）</p>
+	                        </div>
+	                      </div>
+	                      <div class="mui-slider-indicator">
+	                        <div class="mui-indicator mui-active"></div>
+	                        <div class="mui-indicator"></div>
+	                        <div class="mui-indicator"></div>
+	                        <div class="mui-indicator"></div>
+	                      </div>
+	                    </div>
+	                    <ul class="mui-table-view mui-grid-view mui-grid-9">
+	                    <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3 qd" id="sign_daily">
+	                        <a href="sign_daily.html">
+	                            <span class="mui-icon iconfont icon-1-qiandao"></span>
+	                            <div class="mui-media-body">签到</div>
+	                        </a>
+	                    </li>
+	                    <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3 llfb" id="force_distributior">
+	                        <a href="force_distribution.html">
+	                            <span class="mui-icon iconfont icon-diqiu"></span>
+	                            <div class="mui-media-body">力量分布</div>
+	                        </a>
+	                    </li>
+	                    <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3 xl" id="patrol">
+	                        <a href="patrol_pointSign.html">
+	                            <span class="mui-icon iconfont icon-xlc"></span>
+	                            <div class="mui-media-body">巡逻</div>
+	                        </a>
+	                    </li>
+	                    <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3" id="train_online">
+	                        <a href="train_online.html">
+	                        <span class="mui-icon iconfont icon-px"></span>
+	                            <div class="mui-media-body">培训</div>
+	                            <div id="ts">1</div>
+	                        </a>
+	                    </li>
+	                    <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3 dt" id="information">
+	                        <a href="Information.html">
+	                          <span class="mui-icon iconfont icon-dongtai"></span>
+	                            <div class="mui-media-body">动态</div>
+	                            <div id="ts">1</div>
+	                        </a>
+	                    </li>
+	                    <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3" id="my_task">
+	                        <a href="my_task.html">
+	                           <span class="mui-icon iconfont icon-renwu"></span>
+	                            <div class="mui-media-body">我的任务</div>
+	                            <div id="ts">1</div>
+	                        </a>
+	                    </li>
+	                        </ul>
+	                    
+	                </div>
+	            </div>
+	       	 <div class="mui-off-canvas-backdrop"></div>
+	        </div>
+	    </div>
+	    <script src="js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init()
+		</script>
+		<script>
+mui('body').on('tap','a',function(){document.location.href=this.href;}); 
+</script>
+<script type="text/javascript">
+	mui(".mui-table-view-cell").on("tap","a",function(e){
+		$title =this.getAttribute("title");
+		mui.openWindow({
+      url:'mailList.html',
+      id:'mailList.html',
+      styles:{
+        top:'0px',//mui标题栏默认高度为45px；
+        bottom:'50px'//默认为0px，可不定义；
+      },
+      show:{
+      	autoShow:true,
+      	aniShow:"slide-in-right",
+      	duration:200
+      }
+      extras:{
+      	title:$title
+      },
+      waiting:{
+      autoShow:true,//自动显示等待框，默认为true
+      title:'正在加载...',//等待对话框上显示的提示内容
+      options:{
+      }
+  });
+	})
+</script>
+</body>
+</html>

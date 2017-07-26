@@ -1,0 +1,265 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<style>
+			
+			.mui-bar-nav{
+				background-color: #3088c9;
+			}
+			.mui-pull-left{
+				color: #fff;
+			}
+			.mui-title{
+				color: #fff;
+				font-size: 14px;
+			}
+			#shen{
+				width: 100%;
+				height: 240px;;
+				
+ background: -webkit-linear-gradient(left, #3089c9 , #31b6c9); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(right, #3089c9 , #31b6c9); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(right, #3089c9 , #31b6c9); /* Firefox 3.6 - 15 */
+    background: linear-gradient(to right, #3089c9 , #31b6c9); /* 标准的语法（必须放在最后） */
+				
+				background-size: 100% 240px;
+				color: #fff;
+
+				
+			}
+			.mui-btn-outlined:active{
+				border-bottom:3px solid #007AFF;
+				background-color: rgba(0,0,0,0.68);
+				
+				
+		
+			}
+			.mui-btn-outlined{
+				border: none;
+				width: 23%;	
+				height: 50px;
+				color: #fff;
+				border-radius: 0;
+				text-align: center;
+				padding: 0px;
+				
+			}
+			.shen-wei{
+				width: 100%;
+				height: 50px;
+				background-color: #000000;
+				opacity: 0.5;
+				position:relative;
+				top: 45px;;
+			}
+			.shenshen{
+				text-align: center;
+				margin:0 auto;
+				line-height: 50px;
+	
+				
+			}
+			body{
+				line-height: 50px;
+			}
+			.mui-media-body{
+				width: 70%;
+			}
+			.mui-media-body p{
+				font-size: 12px;
+				margin-left: 5px;
+			}
+			ul li img{
+				border-radius: 50px;
+			}
+			ul{
+				display: block;
+			}
+			ul li a .mui-media-body{
+				width: 70%;
+				height: 50px;
+				
+			}
+			.mui-media-body h4{
+				font-size: 14px;
+				height: 0px;
+				margin-left: 5px;
+			}
+						ul li .mui-btn{
+				border: 1px solid #000000;
+				border-radius: 3px;
+				width: 50px;
+				height: 26px;
+				font-size: 12px;
+				line-height: 15px;
+				
+			}
+			ul li .mui-btn-outlined{
+				border: 1px solid red;
+				border-radius: 3px;
+				width: 50px;
+				height: 26px;
+				font-size: 12px;
+				margin-right: 10px;
+				
+			}
+			ul li .heikuang{
+				border: 1px solid #000000;
+				border-radius: 3px;
+				width: 50px;
+				height: 26px;
+				font-size: 12px;
+				line-height: 15px;
+				margin-right: 5px;
+				
+			}
+			ul li .youbian{
+				float:right;
+				position: relative;
+				top: -40px;
+			}
+			ul li{
+				height: 70px;
+			}
+			.shenzi{
+				text-align: center;
+				line-height: 30px;
+				position: relative;
+				top: 50px;
+				
+			}
+			.shenzi img{
+				width: 95px;
+				border-radius: 50px;
+				border: 5px solid #6D6D72;
+			}
+			.shenzi p{
+				color: #fff;
+			}
+			.shenzi img:active{
+				border: 5px solid #fff;
+				opacity: 0.8;
+			}
+			.mui-bar-nav{
+				border:none;
+				box-shadow: none;
+				 background: -webkit-linear-gradient(left, #3089c9 , #31b6c9); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(right, #3089c9 , #31b6c9); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(right, #3089c9 , #31b6c9); /* Firefox 3.6 - 15 */
+    background: linear-gradient(to right, #3089c9 , #31b6c9); /* 标准的语法（必须放在最后） */
+			}
+			.mui-bar-tab{
+				line-height: 25px;
+			}		</style>
+		 <script type="text/javascript">
+var _self, _next, timer;
+mui.plusReady(function(){
+    _self = plus.webview.currentWebview();
+     _prev = plus.webview.getWebviewById('mailList1.html');
+    index = plus.webview.getLaunchWebview();
+    _self.drag(
+        {
+            direction : "left",
+            moveMode  :　"followFinger"
+        },
+        {
+            view　              :　_next,
+            moveMode  : "follow"
+        },
+        function(e){
+            if(timer != null){clearTimeout(timer); }
+            timer = setTimeout(function(){
+                index.evalJS("h('work').find('a').removeClass('mui-active'); h('user').addClass('mui-active');");
+            }, 100);
+        }
+    );
+});
+</script>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">个人主页</h1>
+		</header>
+		<nav class="mui-bar mui-bar-tab">
+	    		    <a class="mui-tab-item mui-active" id="work" href="index.html">
+	    		        <span class="mui-icon mui-icon-home"></span>
+	    		        <span class="mui-tab-label">工作</span>
+	    		    </a>
+	    		    <a class="mui-tab-item" id="discovery" href="mailList.html">
+	    		        <span class="mui-icon mui-icon-help"></span>
+	    		        <span class="mui-tab-label">发现</span>
+	    		    </a>
+	    		    <a class="mui-tab-item" id="mailList" href="mailList.html">
+	    		        <span class="mui-icon mui-icon-chat"></span>
+	    		        <span class="mui-tab-label">沟通</span>
+	    		    </a>
+	    		    <a class="mui-tab-item" id="user" href="user.html">
+	    		        <span class="mui-icon mui-icon-contact"></span>
+	    		        <span class="mui-tab-label">我</span>
+	    		    </a>
+	    		</nav>
+		<div class="mui-content">
+		<div id="shen">
+			<div class="shenzi">
+				<img src="images/icon02.png" href="#">
+				<p>叶良辰</p>
+			</div>
+			<div class="shen-wei">
+			   <div class="shen-shen">
+		        <button type="button" class="mui-btn mui-btn-outlined" onclick="window.location='use_unreadMsg.html'">未读信息</button>|
+				<button type="button" class="mui-btn mui-btn-outlined" onclick="window.location='user_toFocusMe.html'">关注的人</button>|
+			    <button type="button" class="mui-btn mui-btn-outlined" onclick="window.location='user_toFocusMe.html'">关注的请求</button>|
+			    <button type="button" class="mui-btn mui-btn-outlined" onclick="window.location='user_pwdSetting.html'">重置密码</button>
+			   </div>
+			</div>
+			
+		</div>
+		<ul class="mui-table-view">
+    <li class="mui-table-view-cell mui-media">
+        <a href="#">
+            <img class="mui-media-object mui-pull-left" src="images/111.jpg">
+            <div class="mui-media-body">
+                <h4>精灵宝可萌</h4>
+                <p class='mui-ellipsis'>欢迎来到未读消息界面</p>
+               
+            </div>
+        </a>
+        <div class="youbian">
+         <button type="button" class="mui-btn mui-btn-danger mui-btn-outlined">拒绝</button>
+         <button type="button" class="mui-btn heikuang" id="allow">同意</button>
+        </div>
+    </li>
+    <li class="mui-table-view-cell mui-media">
+        <a href="#">
+            <img class="mui-media-object mui-pull-left" src="images/111.jpg">
+            <div class="mui-media-body">
+        <h4>精灵宝可萌</h4>
+                <p class='mui-ellipsis'>欢迎来到未读消息界面</p>
+            
+            </div>
+        </a>
+<div class="youbian">
+         <button type="button" class="mui-btn mui-btn-danger mui-btn-outlined">拒绝</button>
+         <button type="button" class="mui-btn heikuang" id="allow">同意</button>
+        </div>
+    </li>
+    
+</ul>
+	</div>
+
+		<script src="js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init()
+		</script>
+		<script>
+mui('body').on('tap','a',function(){document.location.href=this.href;}); 
+</script>
+	</body>
+</html>

@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="css/iconfont.css"/>
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	</head>
+
+	<body>
+		<script src="js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init()
+		</script>
+		<header class="mui-bar mui-bar-nav">
+		    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		    <h1 class="mui-title">我的积分</h1>
+		</header>
+		<div class="mui-content">
+		    <div class="box-bg1">
+		    	<p class="mui-text-center">
+		    	   <span class="iconfont icon-integral">
+		    	
+		    	   </span>
+		    	   <span class="font-size1" id="totalScore">
+		    		118
+		    	   </span>
+		    	</p>
+		    	<p class="mui-text-center all" id="label">个人团队总积分</p>
+		    	<p class="mui-text-center all">
+		    		<span class="span-ji" id="thisMonth">118<br/>本月积分</span>
+		    		<span class="span-feng" id="lastMonth">150<br/>上月积分</span>
+		    		
+		    	    </p>
+		    	
+		   
+		    </div>
+		    <div class="box3">
+		    	<span class="box-span-font">
+		    		排行榜
+		    	</span>
+		    	<span class="iconfont icon-sandian span-ico-size"></span>
+		    </div>
+		    
+		</div>
+		<nav class="mui-bar mui-bar-tab">
+	    		    <a class="mui-tab-item mui-active" id="work" href="index.html">
+	    		        <span class="mui-icon mui-icon-home"></span>
+	    		        <span class="mui-tab-label">工作</span>
+	    		    </a>
+	    		    <a class="mui-tab-item" id="discovery" href="mailList.html">
+	    		        <span class="mui-icon mui-icon-help"></span>
+	    		        <span class="mui-tab-label">发现</span>
+	    		    </a>
+	    		    <a class="mui-tab-item" id="mailList" href="force_distribution_groupSend.html">
+	    		        <span class="mui-icon mui-icon-chat"></span>
+	    		        <span class="mui-tab-label">沟通</span>
+	    		    </a>
+	    		    <a class="mui-tab-item" id="user" href="user.html">
+	    		        <span class="mui-icon mui-icon-contact"></span>
+	    		        <span class="mui-tab-label">我</span>
+	    		    </a>
+	    		</nav>
+		<ul class="mui-table-view list">
+		       
+		        
+		        <li class="mui-table-view-cell list-li" id="index">
+		         <span class="ico-logo-size ico-bg"></span>  
+		         <span class="span-all" id="name">喂喂喂</span>
+		         <span class="span-all2" id="score">118分</span>
+		        </li>
+		        <li class="mui-table-view-cell list-li" id="index">
+		           <span class="ico-logo-size2"></span> 
+		            <span class="span-all" id="name">武松</span>
+		             <span class="span-all2" id="score">98分</span>
+		        </li>
+		        <li class="mui-table-view-cell list-li" id="index">
+		            <span class="ico-logo-size3"></span> 
+		             <span class="span-all" id="name">林冲</span>
+		              <span class="span-all2" id="score">95分</span>
+		        </li>
+		        <li class="mui-table-view-cell list-li" id="index">
+		            <span class="ico-logo-size4"></span> 
+		             <span class="span-all" id="name">鲁智深</span>
+		              <span class="span-all2" id="score">93分</span>
+		        </li>
+		    </ul>
+		    <script>
+mui('body').on('tap','a',function(){document.location.href=this.href;}); 
+</script>
+	</body>
+</html>

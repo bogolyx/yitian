@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="css/iconfont.css" />
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+
+	<body>
+		<script src="js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init()
+		</script>
+		<header class="mui-bar mui-bar-nav">
+		    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		    <h1 class="mui-title">动态资讯</h1>
+		    <button class="mui-btn mui-btn-blue mui-btn-link mui-pull-right" style="color: #fff;" onclick="window.location='information_publish.html'">发布</button>
+		</header>
+		<div class="mui-content">
+		    <div class="box-size">
+		    	<span class="iconfont icon-zixun"></span>
+		    	<span class="span-font">未读资讯</span></div>
+		    	<ul class="mui-table-view">
+		    	        <li class="mui-table-view-cell">
+		    	        	<span class="font-color-span">群防</span>
+		    	            <a class="a-style" href="information_detail.html">
+		    	               喂喂喂
+		    	            </a>
+		    	            <p class="p-font">2017,.6.24  00:11</p>
+		    	        </li>
+		    	        <li class="mui-table-view-cell">
+		    	            <a class="" href="information_detail.html">
+		    	             轮值轮讯系统开通了！！
+		    	            </a>
+		    	        </li>
+		    	       
+		    	    </ul>
+		    	    <ul class="mui-table-view">
+		    	        <li class="mui-table-view-cell">
+		    	        	<span class="font-color-span">群防</span>
+		    	            <a class="a-style" href="information_detail.html">
+		    	               喂喂喂
+		    	            </a>
+		    	            <p class="p-font">2017,.6.24  00:11</p>
+		    	        </li>
+		    	        <li class="mui-table-view-cell">
+		    	            <a class="" href="information_detail.html">
+		    	           请注意有飙车，车为黄色玛莎拉蒂跑车
+		    	            </a>
+		    	        </li>
+		    	       
+		    	    </ul>
+		</div>
+		<nav class="mui-bar mui-bar-tab">
+	    		    <a class="mui-tab-item mui-active" id="work" href="index.html">
+	    		        <span class="mui-icon mui-icon-home"></span>
+	    		        <span class="mui-tab-label">工作</span>
+	    		    </a>
+	    		    <a class="mui-tab-item" id="discovery" href="mailList.html">
+	    		        <span class="mui-icon mui-icon-help"></span>
+	    		        <span class="mui-tab-label">发现</span>
+	    		    </a>
+	    		    <a class="mui-tab-item" id="mailList" href="force_distribution_groupSend.html">
+	    		        <span class="mui-icon mui-icon-chat"></span>
+	    		        <span class="mui-tab-label">沟通</span>
+	    		    </a>
+	    		    <a class="mui-tab-item" id="user" href="user.html">
+	    		        <span class="mui-icon mui-icon-contact"></span>
+	    		        <span class="mui-tab-label">我</span>
+	    		    </a>
+	    		</nav>
+	    		<script>
+mui('body').on('tap','a',function(){document.location.href=this.href;}); 
+</script>
+	</body>
+	
+</html>

@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>Hello MUI</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<link rel="stylesheet" href="./css/mui.min.css">
+		<style>
+				
+			.mui-btn-outlined {	
+				margin-top: 45px;;
+				border: none;
+				background-color: #fff;
+				height: 50px;
+				border-radius: 0;
+				
+			}
+			.mui-btn-outlined.mui-active{
+	background-color:#0062CC;
+	}
+			.mui-bar-nav{
+				background-color: #3088c9;
+			}
+			.mui-pull-left{
+				color: #fff;x`
+			}
+			.mui-title{
+				color: #fff;
+				font-size: 14px;
+			}
+			#anniu{
+				width: 100%;
+				height:51px;
+				display: inline;
+			}
+			#an{
+				position:absolute;
+				
+			}
+				select{
+				background:transparent;
+			}
+			.mui-input-row label {
+font-family: 'Helvetica Neue',Helvetica,sans-serif;
+line-height: 1.1;
+float: left;
+width: 50%;
+padding: 11px 15px;
+}
+.mui-input-row label~input, .mui-input-row label~select, .mui-input-row label~textarea {
+float: right;
+width: 50%;
+margin-bottom: 0;
+padding-left: 0;
+border: 0;
+}
+		#reg{
+				background-color: #ff9c00;
+				border: 1px solid #929292;
+			}
+	 .mui-input-group:after{
+		    	background:transparent;
+		    }
+		    .mui-input-group:before{
+		    	background:transparent;
+		    }
+		    #login-form{
+				background:transparent;
+				width: 90%;
+				margin: 0 auto;
+			}
+		
+			.mui-input-row p{
+				display: inline-block;
+				line-height: 25px;
+				margin-left: -10px;
+			}
+			#preview{
+	width:70px;
+	height:70px;
+	}
+	#tp{
+		background-color: #fff;
+		width: 100%;
+		margin: auto;
+		height: 150px;;
+		margin-top: 30px;;
+		
+		
+
+	}
+	.mui-btn-primary{
+		margin-top: 60px;;
+	}
+	#tp2{
+		display: inline-block;
+		width: 100%;
+		height: 80px;
+		margin-top: 30px;
+		margin-left: 50px;
+
+	}
+	#tp3{
+		position: absolute;
+		margin-left: 20px;
+		margin-top: 50px;
+	}
+	.mui-btn-green{
+		background-color: #ff9c00;
+			border: 1px solid #929292;
+	}
+	#mui-selected1{
+		opacity: 0.37;
+	}
+	.mui-btn-outlined:active{
+		border-bottom: 1px solid #CF2D28;	
+		background-color: transparent !important;	
+	}
+	.mui-btn-outlined:active{
+		color: #000000 !important;
+	}
+		</style>
+		<link rel="stylesheet" type="text/css" href="./css/feedback-page.css" />
+	</head>
+
+	<body>
+		<!--页面主结构开始-->
+		<div id="app" class="mui-views">
+			<div class="mui-view">
+				<div class="mui-navbar">
+				</div>
+				<div class="mui-pages">
+				</div>
+			</div>
+		</div>
+		<!--页面主结构结束-->
+		<!--单页面开始-->
+		<div id="setting" class="mui-page">
+			<!--页面标题栏开始-->
+			<div class="mui-navbar-inner mui-bar mui-bar-nav">
+				<button type="button" class="mui-left mui-action-back mui-btn  mui-btn-link mui-btn-nav mui-pull-left">
+					<span class="mui-icon mui-icon-left-nav"></span>
+				</button>
+				
+			</div>
+			<!--页面标题栏结束-->
+			<!--页面主内容区开始-->
+			
+			<!--页面主内容区结束-->
+		
+		
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">注册账号</h1>
+		</header>
+
+		<div id="feedback" class="mui-page feedback">
+			
+			<div id="anniu">
+         <button id="an2" type="button" class="mui-btn mui-btn-outlined" style="width: 50%;">普通人员</button>
+         <button id="an" ype="button" class="mui-btn mui-btn-outlined" style="width: 50%; float: right">轮值轮询人员</button>
+				</div>
+                	<div class="mui-content">
+                		<form id='login-form' class="mui-input-group">
+                		<div class="mui-input-row">
+					<label>姓名：</label>
+					<input id='name' type="text" class="mui-input-clear mui-input" id="name" placeholder="请输入姓名" required>
+				</div>
+
+<div class="mui-input-row">
+<td>
+	<label id="sex">性别：</label>
+    <p class="nan"><input type="radio" checked="checked" name="sex" id="sex"/ >&nbsp;男</p>
+    <p class="nv"><input type="radio"  name="sex" / >&nbsp;女</p>
+</td>
+</div>
+<div class="mui-input-row">
+					<label>身份证号码：</label>
+					<input id='idCode' type="text" class="mui-input-clear mui-input" id="idCode" placeholder="请输入身份证号码" required>
+				</div>
+<div class="mui-input-row ">
+
+<label>注册地派出所：</label>
+
+<select id="policeStation" onclick="changetmd()">
+
+
+
+<option value="1" selected="selected">永嘉派出所</option>
+
+<option value="3">金华派出所</option>
+
+<option value="4">..</option>
+
+<option value="5">..</option>
+
+<option value="6">..</option>
+
+<option value="7">..</option>
+
+</select>
+                                 
+</div>
+</form>
+				<p >图片(选填,提供问题截图)</p>
+				<div id='image-list' class="row image-list">
+					<div class="image-item space"><div class="image-close">X</div><input type="file" accept="image/*" id="image-1"></div>
+				</div>
+				<p>QQ/邮箱</p>
+				<div class="mui-input-row">
+					<input id='contact' type="text" class="mui-input-clear  contact" placeholder="(选填,方便我们联系你 )" />
+				</div>
+				<button id='submit' type="button" class="mui-btn mui-btn-green" href="zc.html" onclick="error()">下一步</button>
+			
+<script>
+	function changetmd(){
+	var optiopntm = document.getElementById("mui-selected1").style.opacity;
+	if(optiopntm !== 1){
+	document.getElementById("mui-selected1").style.opacity = 1;
+	}else{
+	document.getElementById("mui-selected1").style.opacity = 0.37;
+	}}
+	</script>
+	</body>
+	
+	<script src="./js/mui.min.js "></script>
+	
+	<script>
+		mui.init();
+		 //初始化单页view
+		var viewApi = mui('#app').view({
+			defaultPage: '#setting'
+		});
+		 //初始化单页的区域滚动
+		mui('.mui-scroll-wrapper').scroll();
+		 //分享操作 
+		var shares = {};
+		mui.plusReady(function() {
+			plus.share.getServices(function(s) {
+				if (s && s.length > 0) {
+					for (var i = 0; i < s.length; i++) {
+						var t = s[i];
+						shares[t.id] = t;
+					}
+				}
+			}, function() {
+				console.log("获取分享服务列表失败");
+			});
+		});
+		 //分享链接点击事件
+		 </script>
+		
+		
+		<script>
+			function error() {
+				var plzname = document.getElementById("name").value;
+				var plzsex = document.getElementById("sex").value;
+				var plzidCode = document.getElementById("idCode").value;
+				var plzpoliceStation = document.getElementById("policeStation").value;
+				if(plzname==""){
+					mui.toast("请输入姓名");
+					return;
+				}else if(plzsex== "男"){
+					mui.toast("请选择性别");
+					return;
+				}else if(plzidCode==""){
+					mui.toast("请输入身份证");
+					return;
+				}else if(plzpoliceStation==""){
+					mui.toast("请输入注册地派出所");
+					return;
+				}else{}
+				
+			}
+			
+		</script>
+
+</html>

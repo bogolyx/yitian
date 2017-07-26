@@ -1,0 +1,229 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+	<style>
+		body{
+			background-color: #f3f3f3;
+		}
+		/*顶部开始*/
+		.mui-bar-nav{
+				background-color:#3088c9;
+				height: 50px;				
+			}
+			.mui-pull-left{
+				color: #fff;
+				line-height: 25px;
+			}
+			
+			
+			.mui-title{
+				text-align: center;
+				line-height: 50px;
+				color: #FFFFff;
+			}
+			
+			/*顶部结束*/
+			/*主体开始*/
+			.mui-table-view-cell{
+				background-color: #f3f3f3;
+				font-size:14px;
+				font-weight: 600;
+				
+			}
+			#type{
+				opacity: 0.37;
+			}
+			#startTime{
+				opacity: 0.37;
+			}
+			#endTime{
+				opacity: 0.37;
+			}
+			#description{
+				background-color: #f3f3f3;
+			}
+			.mbsc-android-holo .dwv { text-align:left;text-indent:.8em; }
+			/*toast信息提示*/
+.mui-toast-container {bottom: 50% !important;}
+.mui-toast-message {
+	opacity: 0.6;
+	 color: #fff;
+	  width: 200px; 
+	  }
+			</style>
+	</head>
+
+	<body>
+		<script src="js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init()
+		</script>
+		<script>
+			function changetm(){
+				var optiopntmd = document.getElementById("type").style.opacity;
+				if(optiopntmd !== 1||optiopntmd2 !==1){
+					document.getElementById("type").style.opacity = 1;
+				}else{
+					document.getElementById("type").style.opacity = 0.37;
+				}
+			}
+		</script>
+		<script>
+			function changetm2(){
+				var optiopntmd = document.getElementById("startTime").style.opacity;
+				var optiopntmd2 = document.getElementById("endTime").style.opacity;
+				if(optiopntmd !== 1){
+					document.getElementById("startTime").style.opacity = 1;
+					document.getElementById("endTime").style.opacity = 1;
+				}else{
+					document.getElementById("startTime").style.opacity = 0.37;
+					document.getElementById("endTime").style.opacity = 0.37;
+				}
+			}
+		</script><!--
+                 	描述：巡逻时间时间点击变色
+               -->
+	<header class="mui-bar mui-bar-nav">
+		<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left" href="##"></a>
+		<h1 class="mui-title" style="font-size: 14px;">任务发布</h1>
+	</header>
+		<!--头部完成-->
+		<!--主体开始-->
+<ul class="mui-table-view" style="margin-top: 50px;">
+    <li class="mui-table-view-cell">	
+	    <div class="mui-input-row" style="height:28px;">
+	        <label class="title" style="padding-left: 0;">主题：*</label>
+	   		<input id="title" type="text" class="mui-input-clear" placeholder="请输入主题" style="height: 40px;font-size: 16px;padding-left: 5px;">
+	    </div>
+
+	</li>
+    <li class="mui-table-view-cell" style="height: 49px;">
+        <div class="mui-input-row mui-select" >
+            <label style="padding-left: 0;">类型:*</label>
+            <select id="type" class="type" name="type" style="background-color: #f3f3f3;" onclick="changetm()">	
+                <option value="1" >紧急通知</option>
+                <option value="2" >正常消息</option>
+                <option value="3" selected="selected" disabled="disabled">请选择类型</option>
+            </select>
+        </div>
+        
+    </li>
+    <li class="mui-table-view-cell" >
+    	<label style="padding-left: 0;">任务描述：*</label>
+    	<textarea id="description" class="description" name="description" placeholder="限200字" maxlength="400"style="width: 100%; height: 50px; font-size: 14px; margin-bottom: 0;" ></textarea>
+    </li>
+    <li class="mui-table-view-cell">
+    	<div class="mui-input-row" style="height: 28px;">
+	        <label style="padding-left: 0;">领队：*</label>
+	   		<input id="leader" type="text" class="mui-input-clear" placeholder="请输入领队姓名"style="height: 40px;font-size: 14px;" required oninvalid="setCustomValidity('不能为空')" onsubmit="setCustomValidity('')"/>
+	    </div>
+
+    </li>
+    <li class="mui-table-view-cell" style="height: 49px;">
+    	<label style="padding-left: 0;line-height: 40px;">巡逻人数：*</label>
+    	<div  class="mui-numbox" style="float: right;"data-numbox-min="0">
+    		
+			<!-- "-"按钮，点击可减小当前数值 -->
+			<button class="mui-btn mui-numbox-btn-minus" type="button" >-</button>
+			<input id="tooksCount" class="mui-numbox-input" type="number" />
+			<!-- "+"按钮，点击可增大当前数值 -->
+			<button class="mui-btn mui-numbox-btn-plus" type="button">+</button>
+		</div>
+    </li>
+    <li class="mui-table-view-cell"style="height: 49px;">
+    	<div class="mui-input-row" >
+            <label style="padding-left: 0;">巡逻时间:*</label>
+            <select id="startTime" style="background-color: #f3f3f3; width: 25%;float: left;" onclick="changetm2()">
+                <option value="1" selected="selected">8:00</option>
+                <option value="2">12:00</option>
+                <option value="3">16:00</option>
+            </select>
+            <span style="width: 10%;line-height: 40px;">-</span>
+            <select id="endTime" style="background-color: #f3f3f3; width: 30%;" onclick="changetm2()">
+                <option value="1" selected="selected">8:00</option>
+                <option value="2">12:00</option>
+                <option value="3">16:00</option>
+            </select>
+       </div>
+    </li>
+    <li class="mui-table-view-cell" style="height: 49px;">
+    	<div class="mui-input-row" >
+            <label style="padding-left: 0; line-height: 10px;">开始时间:*</label>
+            <input type="date" style="margin-top: -5px;" id="fromDate" value="2017-07-01"/>
+        </div>
+
+    </li>
+    <li class="mui-table-view-cell" style="height: 49px;">
+    	<div class="mui-input-row" >
+            <label style="padding-left: 0;">结束时间:*</label>
+            <input type="date" id="toDate" value="2017-07-03"/>
+        </div>
+
+    </li>
+        </div>
+    </li>
+    <li class="mui-table-view-cell"style="padding-right: 0;">
+    	<div class="mui-input-row" style="height: 30px;">
+	        <label style="padding-left: 0;width: 35%;">巡逻路径：*</label>
+	        <a href="#"><span class="mui-icon mui-icon-search" style=" margin-top: 5px; position:absolute;right: 8%;"></span></a>
+	   		<input type="text" class="mui-input" id="routeArray" placeholder="瑞安公安局"style="height: 40px;font-size: 14px;width:50%;float: none; background-color: #f3f3f3;">
+    	</div>
+    </li>
+    
+</ul>
+		<!--主体结束-->
+		<!--按钮开始-->
+		<button type="submit" id="publish" class="mui-btn mui-btn-warning" style="width:90%;height: 46px;font-weight: 600;margin: 18px 0 0 5%;" onclick="error()">发&nbsp;布</button>
+		<script>
+			mui('body').on('tap','a',function(){document.location.href=this.href;}); 
+		</script>
+		<script>
+			function error() {
+				var plztitle = document.getElementById("title").value;
+				var plztype = document.getElementById("type").value;
+				var plzdescription = document.getElementById("description").value;
+				var plzleader = document.getElementById("leader").value;
+				var plztooksCount = document.getElementById("tooksCount").value;
+				var plzstartTime = document.getElementById("startTime").value;
+				var plzendTime = document.getElementById("endTime").value;
+				var plzfromDate = document.getElementById("fromDate").value;
+				var plztoDate = document.getElementById("toDate").value;
+				var plzrouteArray = document.getElementById("routeArray").value;
+				if(plztitle==""){
+					mui.toast("请输入主题");
+					return;
+				}else if(plztype== "3"){
+					mui.toast("请选择发布的类型");
+					return;
+				}else if(plzdescription==""){
+					mui.toast("请输入任务描述");
+					return;
+				}else if(plzleader==""){
+					mui.toast("请输入领队姓名");
+					return;
+				}else if(plztooksCount==0){
+					mui.toast("请选择巡逻人数");
+					return;
+				}else if(plzstartTime==plzendTime){
+					mui.toast("请选择巡逻时间");
+					return;
+				}else if(plzfromDate==plztoDate ||plzfromDate>plztoDate){
+					mui.toast("请选择正确的结束时间");
+					return;
+				}else if(plzrouteArray==""){
+					mui.toast("请选择路径");
+					return;
+				}else{}
+				
+			}
+			
+		</script>
+	</body>
+
+</html>

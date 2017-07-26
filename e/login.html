@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html class="ui-page-login">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link href="css/mui.min.css" rel="stylesheet" />
+
+		<style>
+		
+			body{
+				background-color: #102b3f;
+			}
+			.login img{
+				position: relative;
+				top: 125px;
+				}
+			.login h1{
+				color: #fff;
+				text-align: center;
+				position: relative;
+				top:125px;
+			}
+			header{
+				width: 100%;
+				height: 330px;
+			}	
+			.mui-content{
+				background:transparent;
+			}
+			#login-form{
+				background:transparent;
+				width: 70%;
+				margin: 0 auto;
+			}
+			#login{
+				border-radius: 50px;
+		        background-color: #ff9c00;
+		        margin:0 auto;
+		        border: none;	
+			}
+			#reg{
+				color: #fff;
+				position: relative;
+				right: 20px;;
+			}
+			#forgetPassword{
+				color: #fff;
+				position: relative;
+				left: 20px;;
+			}
+			.link-area{
+				text-align: center;
+				position: relative;
+				top: 20px;;
+			}
+			.login{
+				text-align: center;
+			}
+			.mui-content-padded{
+				position: relative;
+				top: 35px;;
+			}
+			.mui-btn-block{
+				width: 70%;
+				height: 50px;
+				line-height: 10px;
+			
+			}
+		    .mui-input-group label{
+		    	color: #fff;
+		    }
+		    .mui-input-group:after{
+		    	background:transparent;
+		    }
+		    .mui-input-group:before{
+		    	background:transparent;
+		    }
+		    #account{
+		    	font-size: 15px;;
+		    }
+		    #password{
+		    	font-size: 15px;;
+		    }
+		
+		</style>
+
+	</head>
+
+	<body>
+		<header class="login">
+			<img src="images/dl.png">
+			<h1>Login</h1>
+		</header>
+		<div class="mui-content">
+			<form id='login-form' class="mui-input-group">
+				<div class="mui-input-row">
+					<label><span class="mui-icon mui-icon-contact"></span></label>
+					<input type="text" class="mui-input-clear mui-input" id="phone" placeholder="请输入账号">
+				</div>
+				<div class="mui-input-row">
+					<label ><span class="mui-icon mui-icon-locked"></span></label>
+					<input type="password" class="mui-input-clear mui-input" id="pwd" placeholder="请输入密码">
+				</div>
+			</form>
+			
+			<div class="mui-content-padded">
+				<button id='login' class="mui-btn mui-btn-block mui-btn-primary" onclick="errorr()">Login</button>
+				<div class="link-area"><a id='reg'>注册账号</a> <span class="spliter"></span> <a id='forgetPassword'>忘记密码</a>
+				</div>
+			</div>
+			<div class="mui-content-padded oauth-area">
+
+			</div>
+		</div>
+		<script>
+			function errorr(){
+				var plzphone = document.getElementById("phone").value;
+				var plzpwd = document.getElementById("pwd").value;
+				if(plzphone==""){
+					mui.toast("请输入账号");
+					return;
+				}else if(plzpwd== ""){
+					mui.toast("请输入密码");
+					return;
+				}else{}
+			}
+			
+		</script>
+	</body>
+
+</html>

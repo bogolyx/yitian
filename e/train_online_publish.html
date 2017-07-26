@@ -1,0 +1,144 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		
+		<style>
+/*顶部开始*/
+		.mui-bar-nav{
+				background-color:#3088c9;
+				height: 50px;				
+			}
+			.mui-pull-left{
+				color: #fff;
+				line-height: 25px;
+			}
+			
+			
+			.mui-title{
+				text-align: center;
+				line-height: 50px;
+				color: #FFFFff;
+			}
+			/*顶部结束*/
+			.mui-input-group{
+				padding-top:30px ;
+				height: 577px;
+			}
+			.mui-input-row{
+				width: 360px;
+				padding: 5px;
+				margin-top: 10px;
+				margin-bottom: 10px;
+			}
+			.mui-button-row{
+				padding: 20px;
+			}
+			.mui-btn-primary{
+				padding: 5px 110px;
+				font-size: 24px;
+				background-color: #EC971F;
+				border: 1px solid #EC971F;
+			}
+			.mui-table-view-cell{
+				background-color: #f3f3f3;
+				font-size:14px;
+				font-weight: 600;
+				
+			}
+			#description{
+				background-color: #f3f3f3;
+			}
+</style>
+
+	</head>
+
+	<body>
+		<script src="js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init()
+		</script>
+		<header class="mui-bar mui-bar-nav">
+		<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left" href="##"></a>
+		<h1 class="mui-title" style="font-size: 14px;">发布培训</h1>
+	</header>
+		<!--头部完成-->
+		
+    <div class="mui-content">
+       <ul class="mui-table-view" style="margin-top: -5px;">
+    <li class="mui-table-view-cell" >	
+	    <div class="mui-input-row" style="height: 40px;">
+	        <label class="title" style="padding-left: 0;">主题：</label>
+	   		<input id="title" type="text" class="mui-input-clear" placeholder="请输入主题"style="height: 40px;font-size: 14px;">
+	    </div>
+	</li>
+	
+    <li class="mui-table-view-cell" style="height: 69px;">
+        <div class="mui-input-row mui-select" >
+            <label style="padding-left: 0;">积分:</label>
+            <select id="score" style="background-color: #f3f3f3;" onclick="changetm()">
+                <option value="0" selected="selected">0</option>
+                 <option value="1" >1</option>
+                <option value="2" >2</option>
+                <option value="3" >3</option>
+                <option value="4" >4</option>
+                <option value="5" >5</option>
+                <option value="6" >6</option>
+                
+            </select>
+        </div>
+    </li>
+    
+    <li class="mui-table-view-cell">	
+	    <div class="mui-input-row" style="height: 40px;">
+	        <label class="title" style="padding-left: 0;">发布时间：</label>
+	   		<input id="publishTime" type="text" class="mui-input-clear" placeholder="请输入发布时间"style="height: 40px;font-size: 14px;">
+	    </div>
+	</li>
+	
+
+</ul>
+</div>		
+
+
+<!--底部开始-->
+	    		
+	  <div class="mui-content">
+			<div class="mui-content-padded">	
+				<p>
+					<a href="#picture" id="video" class="mui-btn mui-btn-primary mui-btn-block mui-btn-outlined" style="padding: 5px 20px;color: #FFFFFF;" onclick="error()">上传视频</a>
+				</p>
+			</div>	
+		</div>
+		
+	
+	<script src="js/mui.min.js"></script> 		
+	    <script>
+			function error() {
+				var plztitle = document.getElementById("title").value;
+				var plzscore = document.getElementById("score").value;
+				var plzpublishTime = document.getElementById("publishTime").value;
+				var plzvideo = document.getElementById("video").value;
+				if(plztitle==""){
+					mui.toast("请输入主题");
+					return;
+				}else if(plzscore== ""){
+					mui.toast("请选择积分");
+					return;
+				}else if(publishTime==""){
+					mui.toast("请输入发布时间");
+					return;
+				}else if(video== ""){
+					mui.toast("请上传视频");
+					return;
+				}else{}
+				
+			}
+			
+	</body>
+
+</html>

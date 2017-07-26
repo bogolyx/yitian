@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html class="ui-page-login">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link href="css/mui.min.css" rel="stylesheet" />
+
+		<style>
+			.mui-content{
+				margin-top: 50px;
+			}
+			
+			.mui-btn {
+				padding: 10px;
+				margin-top: 50px;;
+			}
+			.mui-bar-nav{
+				background-color: #3088c9;
+			}
+			.mui-pull-left{
+				color: #fff;
+			}
+			.mui-title{
+				color: #fff;
+				font-size: 14px;
+			}
+			 .mui-input-group:after{
+		    	background:transparent;
+		    }
+		    .mui-input-group:before{
+		    	background:transparent;
+		    }
+		    #login-form{
+				background:transparent;
+				width: 90%;
+				margin: 0 auto;
+			}
+			#reg{
+				background-color: #ff9c00;
+				border: 1px solid #929292;
+			}
+			select{
+				background:transparent;
+			}
+			.mui-input-row label {
+font-family: 'Helvetica Neue',Helvetica,sans-serif;
+line-height: 1.1;
+float: left;
+width: 40%;
+padding: 11px 15px;
+
+}
+.mui-input-row label~input, .mui-input-row label~select, .mui-input-row label~textarea {
+float: right;
+width: 60%;
+margin-bottom: 0;
+padding-left: 0;
+border: 0;
+}
+#mui-selected1{
+		opacity: 0.37;}
+		#mui-selected2{
+		opacity: 0.37;}
+		#mui-selected3{
+		opacity: 0.37;}
+		#mui-selected4{
+		opacity: 0.37;}
+		#mui-selected5{
+		opacity: 0.37;}
+		</style>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">注册账号</h1>
+		</header>
+		<div class="mui-content">
+		<form id='login-form' class="mui-input-group">
+			<div class="mui-input-row">
+
+<label>民族：</label>
+
+<select id="nation" onclick="changetmd()">
+
+
+
+<option value="1" selected="true">汉族</option>
+
+<option value="2">汉族</option>
+
+<option value="3">傣族</option>
+
+<option value="4">维吾尔族</option>
+
+<option value="5">..</option>
+
+<option value="6">..</option>
+
+<option value="7">..</option>
+
+</select>
+
+</div>
+				
+				<div class="mui-input-row">
+
+<label>籍贯：</label>
+
+<select id="nativePlace" onclick="changetmd2()">
+
+
+
+<option value="1" selected="true">温州</option>
+
+<option value="2">杭州</option>
+
+<option value="3">苏州</option>
+
+<option value="4">..</option>
+
+<option value="5">..</option>
+
+<option value="6">..</option>
+
+<option value="7">..</option>
+
+</select>
+
+</div>
+				<div class="mui-input-row">
+
+<label>政治面貌：</label>
+
+<select id="politic" onclick="changetmd3()">
+
+
+
+<option value="1" selected="true">党员</option>
+
+<option value="2">群众</option>
+
+<option value="3">共青团员</option>
+
+<option value="4">..</option>
+
+<option value="5">..</option>
+
+<option value="6">..</option>
+
+<option value="7">..</option>
+
+</select>
+
+</div>
+				<div class="mui-input-row">
+
+<label>文化程度：</label>
+
+<select id="education" onclick="changetmd4()">
+
+
+
+<option value="1" selected="true">博士</option>
+
+<option value="2">大学</option>
+
+<option value="3">中学</option>
+
+<option value="4">..</option>
+
+<option value="5">..</option>
+
+<option value="6">..</option>
+
+<option value="7">..</option>
+
+</select>
+
+</div>
+				<div class="mui-input-row">
+
+<label>职业：</label>
+
+<select id="workType" onclick="changetmd5()">
+
+
+
+<option value="1" selected="true">学生</option>
+
+<option value="2">教师</option>
+
+<option value="3">工人</option>
+
+<option value="4">..</option>
+
+<option value="5">..</option>
+
+<option value="6">..</option>
+
+<option value="7">..</option>
+
+</select>
+
+</div>
+			<div class="mui-input-row">
+					<label>专长：</label>
+					<input id="skill" type="text" class="mui-input-clear mui-input" placeholder="请输入专长" required>
+				</div>
+			<div class="mui-input-row">
+					<label>常住地址：</label>
+					<input id="address" type="text" class="mui-input-clear mui-input" placeholder="请输入常住地址" required>
+				</div>
+				<div class="mui-input-row">
+					<label>工作单位：</label>
+					<input id="company_work" type="text" class="mui-input-clear mui-input" placeholder="请输入工作单位" required>
+				</div>	
+
+
+
+			</form>
+			<div class="mui-content-padded">
+				<button id='reg' class="mui-btn mui-btn-block mui-btn-primary" href="zc3.html" onclick="error()">下一步</button>
+			</div>
+			
+		</div>
+		<script src="js/mui.min.js"></script>
+		<script src="js/app.js"></script>
+		<script>
+	function changetmd(){
+	var optiopntm = document.getElementById("mui-selected1").style.opacity;
+	if(optiopntm !== 1){
+	document.getElementById("mui-selected1").style.opacity = 1;
+	}else{
+	document.getElementById("mui-selected1").style.opacity = 0.37;
+	}}
+	</script>
+		<script>
+	function changetmd2(){
+	var optiopntm = document.getElementById("mui-selected2").style.opacity;
+	if(optiopntm !== 1){
+	document.getElementById("mui-selected2").style.opacity = 1;
+	}else{
+	document.getElementById("mui-selected2").style.opacity = 0.37;
+	}}
+	</script>
+		<script>
+	function changetmd3(){
+	var optiopntm = document.getElementById("mui-selected3").style.opacity;
+	if(optiopntm !== 1){
+	document.getElementById("mui-selected3").style.opacity = 1;
+	}else{
+	document.getElementById("mui-selected3").style.opacity = 0.37;
+	}}
+	</script>
+		<script>
+	function changetmd4(){
+	var optiopntm = document.getElementById("mui-selected4").style.opacity;
+	if(optiopntm !== 1){
+	document.getElementById("mui-selected4").style.opacity = 1;
+	}else{
+	document.getElementById("mui-selected4").style.opacity = 0.37;
+	}}
+	</script>
+		<script>
+	function changetmd5(){
+	var optiopntm = document.getElementById("mui-selected5").style.opacity;
+	if(optiopntm !== 1){
+	document.getElementById("mui-selected5").style.opacity = 1;
+	}else{
+	document.getElementById("mui-selected5").style.opacity = 0.37;
+	}}
+	</script>
+		
+		<script>
+			function error() {
+				var plznation = document.getElementById("nation").value;
+				var plznativePlace = document.getElementById("nativePlace").value;
+				var plzpolitic = document.getElementById("politic").value;
+				var plzeducation = document.getElementById("education").value;
+				var plzworkType = document.getElementById("workType").value;
+				var plzskill = document.getElementById("skill").value;
+				var plzaddress = document.getElementById("address").value;				
+				var plzcompany_work = document.getElementById("company_work").value;
+				if(plznation==""){
+					mui.toast("请输入民族");
+					return;
+				}else if(plznativePlace==""){
+					mui.toast("请输入籍贯");
+					return;
+				}else if(plzpolitic==""){
+					mui.toast("请输入政治面貌");
+					return;
+				}else if(plzeducation==""){
+					mui.toast("请输入文化程度");
+					return;
+				}else if(plzworkType==""){
+					mui.toast("请输入职业");
+					return;
+				}else if(plzskill==""){
+					mui.toast("请输入专长");
+					return;
+				}else if(plzaddress==""){
+					mui.toast("请输入常住地址");
+					return;
+				}else if(plzcompany_work==""){
+					mui.toast("请输入工作单位");
+					return;
+				}else{}
+				
+			}
+			
+		</script>
+	</body>
+
+</html>

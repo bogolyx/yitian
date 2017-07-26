@@ -1,0 +1,311 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<style>
+			.mui-bar-nav{
+				 background: -webkit-linear-gradient(left, #3089c9 , #31b6c9); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(right, #3089c9 , #31b6c9); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(right, #3089c9 , #31b6c9); /* Firefox 3.6 - 15 */
+    background: linear-gradient(to right, #3089c9 , #31b6c9); /* 标准的语法（必须放在最后） */
+			}
+			.mui-pull-left{
+				color: #fff;
+			}
+			.mui-title{
+				color: #fff;
+				font-size: 14px;
+			}
+			#shen{
+				width: 100%;
+				height: 240px;;
+				 background: -webkit-linear-gradient(left, #3089c9 , #31b6c9); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(right, #3089c9 , #31b6c9); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(right, #3089c9 , #31b6c9); /* Firefox 3.6 - 15 */
+    background: linear-gradient(to right, #3089c9 , #31b6c9); /* 标准的语法（必须放在最后） */
+				background-size: 100% 240px;
+				color: #fff;
+
+				
+			}
+			.mui-btn-outlined:active{
+				border-bottom:3px solid #007AFF;
+				background-color: rgba(0,0,0,0.68);
+				
+				
+		
+			}
+			.mui-btn-outlined{
+				border: none;
+				width: 23%;	
+				height: 50px;
+				color: #fff;
+				border-radius: 0;
+				text-align: center;
+				padding: 0px;
+				
+			}
+			.shen-wei{
+				width: 100%;
+				height: 50px;
+				background-color: #000000;
+				opacity: 0.5;
+				position:relative;
+				top: 45px;;
+			}
+			.shenshen{
+				text-align: center;
+				margin:0 auto;
+				line-height: 50px;
+	
+				
+			}
+			body{
+				line-height: 50px;
+			}
+			.mui-media-body{
+				width: 70%;
+			}
+			.mui-media-body p{
+				font-size: 12px;
+				margin-left: 5px;
+			}
+			ul li img{
+				border-radius: 50px;
+			}
+			ul{
+				display: block;
+			}
+			ul li a .mui-media-body{
+				width: 70%;
+				height: 50px;
+				
+			}
+			.mui-media-body h4{
+				font-size: 14px;
+				height: 0px;
+				margin-left: 5px;
+			}
+						ul li .mui-btn{
+				border: 1px solid #000000;
+				border-radius: 3px;
+				width: 50px;
+				height: 26px;
+				font-size: 12px;
+				line-height: 15px;
+				
+			}
+			ul li .mui-btn-outlined{
+				border: 1px solid red;
+				border-radius: 3px;
+				width: 50px;
+				height: 26px;
+				font-size: 12px;
+				margin-right: 10px;
+				
+			}
+			ul li .heikuang{
+				border: 1px solid #000000;
+				border-radius: 3px;
+				width: 50px;
+				height: 26px;
+				font-size: 12px;
+				line-height: 15px;
+				margin-right: 5px;
+				
+			}
+			ul li .youbian{
+				float:right;
+				position: relative;
+				top: -40px;
+			}
+			ul li{
+				height: 70px;
+			}
+			.shenzi{
+				text-align: center;
+				line-height: 30px;
+				position: relative;
+				top: 50px;
+				
+			}
+			.shenzi img{
+				width: 95px;
+				border-radius: 50px;
+				border: 5px solid #6D6D72;
+			}
+			.shenzi p{
+				color: #fff;
+			}
+			.shenzi img:active{
+				border: 5px solid #fff;
+				opacity: 0.8;
+			}
+			.mui-bar-nav{
+				border:none;
+				box-shadow: none;
+			}
+			.mui-icon-forward{
+				float: right;
+				position: relative;
+				top: -56px;
+				right: 15px;
+				
+				
+			}
+			
+			
+    .wrapper {
+        position: relative;
+        height: 70px;
+        overflow: hidden;
+        padding-bottom: 5%;
+    }
+    .container {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 100px;
+        line-height: 100px;
+        padding-left: 5%;
+        box-sizing: border-box;
+        background-color: #fff;
+        transition: left cubic-bezier(.68,.69,.11,.4) 0.2s;
+        -webkit-transition: left cubic-bezier(.68,.69,.11,.4) 0.2s;
+        font-weight: 200;
+    }
+    .container h4{
+	font-size: 14px;
+				height: 0px;
+				margin-left: 5px;
+				margin-top: 15px;
+
+    }
+    .container p{
+    	font-size: 12px;
+				margin-left: 5px;
+				line-height: 50px;
+    }
+    .delete {
+        float: left;
+        position: absolute;
+        width: 100px;
+        top: 0;
+        right: -100px;
+        background-color: #f00;
+        color: #fff;
+        text-align: center;
+        height: 70px;
+        line-height: 75px;
+
+    }
+    .delete i.iconfont {
+        font-size: 1em;
+        padding-right: 5px;
+    }
+    .wrapper .mui-pull-left{
+    	border-radius: 100px;
+    	width:42px;
+    	margin-top: 10px;
+    	margin-right: 15px;
+    	margin-left: -3px;
+    }
+		</style>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left" ></a>
+			<h1 class="mui-title">个人主页</h1>
+		</header>
+		<div class="mui-content">
+		<div id="shen">
+			<div class="shenzi">
+				<img src="images/icon02.png" href="#">
+				<p>叶良辰</p>
+			</div>
+			<div class="shen-wei">
+			   <div class="shen-shen">
+		        <button type="button" class="mui-btn mui-btn-outlined" onclick="window.location='use_unreadMsg.html'">未读信息</button>|
+				<button type="button" class="mui-btn mui-btn-outlined" onclick="window.location='user_toFocusMe.html'">关注的人</button>|
+			    <button type="button" class="mui-btn mui-btn-outlined" onclick="window.location='user_toFocusMe.html'">关注的请求</button>|
+			    <button type="button" class="mui-btn mui-btn-outlined" onclick="window.location='user_pwdSetting.html'">重置密码</button>
+			   </div>
+			</div>
+		</div>
+		
+	</div>
+
+    <div class="wrapper">
+        <div class="container">  
+        	<img class="mui-media-object mui-pull-left" src="images/地球1.png">
+        <h4>精灵宝可萌</h4>
+        <p class='mui-ellipsis'>欢迎来到未读消息界面</p>
+        <span class="mui-icon mui-icon-forward"></span>
+        <div class="delete"><i class="iconfont icon-shanchu"></i>删除</div></div>
+    </div>
+    <div class="wrapper">
+        <div class="container">  
+        	<img class="mui-media-object mui-pull-left" src="images/地球1.png">
+        <h4>精灵宝可萌</h4>
+        <p class='mui-ellipsis'>欢迎来到未读消息界面</p>
+        <span class="mui-icon mui-icon-forward"></span>
+        <div class="delete"><i class="iconfont icon-shanchu"></i>删除</div></div>
+    </div>
+		<script src="js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init()
+			  
+  
+    var container = document.querySelectorAll('.container');
+
+    for(var i=0; i<container.length; i++) {
+        
+        var x, y, X, Y, swipeX, swipeY;
+
+        container[i].addEventListener('touchstart', function(event) {
+            x = event.changedTouches[0].pageX;
+            y = event.changedTouches[0].pageY;
+            swipeX = true;
+            swipeY = true ;
+        });
+
+        container[i].addEventListener('touchmove', function(event) {
+
+            X = event.changedTouches[0].pageX;
+            Y = event.changedTouches[0].pageY;
+            
+            // 左右滑动
+            if(swipeX && Math.abs(X-x) - Math.abs(Y-y) > 0) {
+
+                // 阻止事件冒泡
+                event.stopPropagation();
+
+                if(X - x > 10) {
+                    event.preventDefault();
+                    this.style.left = '0px';
+                }
+                if(x - X > 10) {
+                    event.preventDefault();
+                    this.style.left = '-100px';
+                }
+                swipeY = false;
+            }
+
+            // 上下滑动
+            if(swipeY && Math.abs(X-x) - Math.abs(Y-y) < 0) {
+                swipeX = false;
+            }
+            
+        });
+
+    }
+    
+
+		</script>
+	</body>
+</html>
